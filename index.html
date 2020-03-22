@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title>Esoft - The real estate platform for image processing and marketing</title>
+	<title>Editor247</title>
 
 	<meta name="description"
 		content="World-leading photo editing, 3D rendering, marketing automation, floor plans, virtual tours, video showings to make your real estate property stand out." />
@@ -29,35 +29,6 @@
 	<meta name="twitter:title" content="Esoft - The real estate platform for image processing and marketing" />
 	<meta name="twitter:image"
 		content="http://esoft.com.linux21.curanetserver.dk/wp-content/uploads/2019/04/esoft_website_hero_first.jpg" />
-	<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>
-		{
-			"@context": "https://schema.org",
-			"@graph": [{
-				"@type": "WebSite",
-				"@id": "https://www.esoft.com/#website",
-				"url": "https://www.esoft.com/",
-				"name": "Esoft",
-				"description": "market leaders in image processing and online marketing tools",
-				"potentialAction": {
-					"@type": "SearchAction",
-					"target": "https://www.esoft.com/?s={search_term_string}",
-					"query-input": "required name=search_term_string"
-				}
-			}, {
-				"@type": "WebPage",
-				"@id": "https://www.esoft.com/#webpage",
-				"url": "https://www.esoft.com/",
-				"inLanguage": "en-US",
-				"name": "Esoft - The real estate platform for image processing and marketing",
-				"isPartOf": {
-					"@id": "https://www.esoft.com/#website"
-				},
-				"datePublished": "2019-04-09T07:11:26+00:00",
-				"dateModified": "2020-01-17T12:55:51+00:00",
-				"description": "World-leading photo editing, 3D rendering, marketing automation, floor plans, virtual tours, video showings to make your real estate property stand out."
-			}]
-		}
-	</script>
 	<!-- / Yoast SEO plugin. -->
 
 	<link rel='dns-prefetch' href='//s.w.org' />
@@ -139,15 +110,47 @@
 			background: none !important;
 			padding: 0 !important;
 		}
-		.slide_progress{
+
+		.slide_progress {
 			display: none !important
+		}
+
+		.scrolled #masthead {
+			display: none !important;
+		}
+		@media screen and (min-width: 768px){
+			#solutions .img-show .row{
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 100px !important;
+			}
+			#solutions .img-show .row > div{
+				width: 20%;
+				padding-bottom: 30px;
+			}
+		}
+		#solutions .img-show .solution_img{
+				height: 200px !important;
+			}
+		#solutions .img-show{
+			width: 100%;
+		}
+		#solutions .img-show .row > div{
+				padding-bottom: 30px;
+		}
+		#solutions .img-show a{
+			width: 100%;
+		}
+		#solutions .img-show .solution_img:hover{
+			cursor: pointer;
+			transform: scale(1.2);
 		}
 	</style>
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://www.esoft.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css'
 		media='all' />
-	<link rel='stylesheet' id='esoft-style-css'
-		href='https://www.esoft.com/wp-content/themes/esoft/style.css?v=9.1&#038;ver=5.3.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='esoft-style-css' href='./css/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='esoft-style-css' href='./css/lightbox.min.css' type='text/css' media='all' />
 	<link rel='https://api.w.org/' href='https://www.esoft.com/wp-json/' />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.esoft.com/xmlrpc.php?rsd" />
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.esoft.com/wp-includes/wlwmanifest.xml" />
@@ -183,6 +186,7 @@
 		})(window, document, 'script', 'dataLayer', 'GTM-569T4MX');
 	</script>
 	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body
@@ -359,8 +363,8 @@
 		<header id="masthead" class="site-header">
 			<div class="container">
 				<div class="row header_row">
-					<a href='/' class="logo_wrap">
-						<img src="./images/logo.tif" alt="Editor247">
+					<a href='' class="logo_wrap">
+						<img src="./images/logo.png" width="180px" alt="Editor247">
 					</a>
 				</div>
 			</div>
@@ -415,9 +419,9 @@
 											</h1>
 											<p><span style="font-weight: 400;">For nearly 20 years, we have worked passionately to help
 													realtors by delivering reliably image solutions. </span></p>
-											<a href="https://www.esoft.com/solutions/floor-plans/" class="orange_button">
+											<!-- <a href="https://www.esoft.com/solutions/floor-plans/" class="orange_button">
 												<span>Read more</span>
-											</a>
+											</a> -->
 										</div>
 										<div class="slide_text_inner_wrap " data-slide='2'>
 											<h1>
@@ -430,9 +434,9 @@
 											</h1>
 											<p><span style="font-weight: 400;">Leave the measurements and creation of your floor plans to our
 													experienced illustrators and 3D designers.</span></p>
-											<a href="https://esoft.com/contact/" class="orange_button">
+											<!-- <a href="https://esoft.com/contact/" class="orange_button">
 												<span>Get in touch</span>
-											</a>
+											</a> -->
 										</div>
 										<div class="slide_text_inner_wrap " data-slide='3'>
 											<h1>
@@ -445,9 +449,9 @@
 											</h1>
 											<p><span style="font-weight: 400;">Display your online listings around-the-clock with video and
 													digital showings.</span></p>
-											<a href="https://www.esoft.com/solutions/video/" class="orange_button">
+											<!-- <a href="https://www.esoft.com/solutions/video/" class="orange_button">
 												<span>See our videos</span>
-											</a>
+											</a> -->
 										</div>
 										<div class="slide_text_inner_wrap " data-slide='4'>
 											<h1>
@@ -460,9 +464,9 @@
 											</h1>
 											<p><span style="font-weight: 400;">Improve the efficiency of your online marketing with just a few
 													clicks.</span></p>
-											<a href="https://www.esoft.com/solutions/shine/" class="orange_button">
+											<!-- <a href="https://www.esoft.com/solutions/shine/" class="orange_button">
 												<span>Shine with us</span>
-											</a>
+											</a> -->
 										</div>
 									</div>
 								</div>
@@ -502,7 +506,7 @@
 									</svg>
 								</div>
 							</div>
-							<div class="wrap_mobile_link">
+							<!-- <div class="wrap_mobile_link">
 
 								<a href="https://www.esoft.com/solutions/floor-plans/"
 									class="orange_button small_slider_btn repeaterBTN current_anchor" data-slide='1'>
@@ -522,10 +526,10 @@
 									data-slide='4'>
 									<span>Shine with us</span>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="container" id='solutions'>
-							<div class="text_part">
+							<!-- <div class="text_part">
 								<div class="inner_offer">
 									<h1>We tailor our services to your needs</h1>
 									<h3>
@@ -534,77 +538,167 @@
 												photos.</span></h3>
 									</h3>
 								</div>
-							</div>
+							</div> -->
 							<div class="solution_wrap">
 								<div class="row">
 									<div class="col-xs-12 col-lg-6 left_solution">
-										<div class="solution_img lazy"
-											data-bg="url('https://www.esoft.com/wp-content/uploads/shine_hero_6-1516x1000.jpg')">
+										<div class="solution_img lazy" data-bg="url('./images/bg1.jpg')">
 										</div>
 									</div>
 									<div class="col-xs-12 col-lg-6 right_solution">
 										<div class="inner_solution">
 											<div class="text_solution_wrapper">
-												<h2>Shine</h2>
+												<h2>Real estate image editing expert</h2>
 												<h3></h3>
-												<p>With Shine, we ensure that:</p>
+												<!-- <p>Real estate image editing expert</p> -->
 												<ul>
-													<li>Your house is shown to the right people</li>
-													<li>Your house is shown at the right time</li>
-													<li>Your house is shown on the right channels</li>
+													<li>We are a photo editing team with 10 years of experience.</li>
+													<li>Our team started with 15 editors who can provide 2500 photos per day.</li>
 												</ul>
 											</div>
-											<a href="https://www.esoft.com/solutions/shine/" target="">Shine with us</a>
+											<a href="#introduce" target="">Read more</a>
 										</div>
 									</div>
 								</div>
 
-								<div class="row">
+								<div class="row" style="margin-bottom: 0;">
 									<div class="col-xs-12 col-lg-6 left_solution">
-										<div class="solution_img lazy"
-											data-bg="url('https://www.esoft.com/wp-content/uploads/Front-page-box31-video-1500x1000.jpg')">
+										<div class="solution_img lazy" data-bg="url('./images/bg2.jpg')">
 										</div>
 									</div>
 									<div class="col-xs-12 col-lg-6 right_solution">
 										<div class="inner_solution">
 											<div class="text_solution_wrapper">
-												<h2>Video and digital showings </h2>
+												<h2>Edit your photos to be more vivid</h2>
 												<h3></h3>
 												<ul>
-													<li><span style="font-weight: 400;">80% of the buyers search for properties online</span></li>
-													<li>Video and digital showings strengthen your brand</li>
-													<li>Let your clients see the full potential of their future home</li>
+													<li><span style="font-weight: 400;">White balancing</span></li>
+													<li>HDR bracketing with indoor window replacement</li>
+													<li>Image sharpening</li>
+													<li>Remove minor blemishes</li>
+													<li>Lens distortion removal</li>
+													<li>Brightness & contrast adjustment</li>
+													<li>Outdoor sky replacement</li>
+													<li>TV screen replacement,Add fire</li>
+													<li>Flash reflection removal</li>
+													<li>Remove photographer's reflection</li>
+													<li>Vertical & horizontal straightening</li>
+													<li>Grass patch, grass repair</li>
+													<!-- <li>All our solutions are flexible and fit your needs, whether you are in search of professional digital showings,intelligent marketing tools or great premium photos.</li> -->
 												</ul>
 												<p>&nbsp;</p>
 											</div>
-											<a href="https://esoft.com/solutions/video/" target="">WATCH OUR VIDEOS</a>
+											<!-- <a href="https://esoft.com/solutions/video/" target="">WATCH OUR VIDEOS</a> -->
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="text_part" style="text-align:center;margin:auto; padding-top: 100px" id="introduce">
+											<div class="inner_offer">
+												<h2>WE PROVIDE ALL SERVICES WHICH CUSTOMERS REQUEST.</h2>
+												<h3>
+													<h3><span style="font-weight: 400;">All our solutions are flexible and fit your needs, whether
+															you are in search of professional digital showings,intelligent marketing tools or great
+															premium photos.</span></h3>
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="img-show">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg1.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg1.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg2.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg2.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg3.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg3.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg4.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg4.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg5.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg5.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg6.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg6.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg7.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg7.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg8.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg8.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg9.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg9.jpg')">
+													</div>
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<a href="./images/content2/bg10.jpg" data-lightbox="roadtrip">
+													<div class="solution_img lazy" data-bg="url('./images/content2/bg10.jpg')">
+													</div>
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-xs-12 col-lg-6 left_solution">
-										<div class="solution_img lazy"
-											data-bg="url('https://www.esoft.com/wp-content/uploads/Charity-Trip-1500x1000.jpg')">
+										<div class="solution_img lazy" data-bg="url('./images/bg3.jpg')">
 										</div>
 									</div>
 									<div class="col-xs-12 col-lg-6 right_solution">
 										<div class="inner_solution">
 											<div class="text_solution_wrapper">
-												<h2>CSR, beliefs & values</h2>
+												<h2>Florplan</h2>
 												<h3></h3>
 												<ul>
-													<li><span style="font-weight: 400;">Read bout our CSR work in Vietnam</span></li>
-													<li><span style="font-weight: 400;">Get to know our beliefs and values</span></li>
-													<li>And much more</li>
+													<li><span style="font-weight: 400;">Buyers want to see the property layout, to visualise the
+															flow of the rooms, how they fit in relation to others rooms and picture their furniture
+															inside the home.
+															80% of buyers interest a home listing completely include a floor plan.</span></li>
+													<!-- <li><span style="font-weight: 400;">Get to know our beliefs and values</span></li> -->
+													<!-- <li>And much more</li> -->
 												</ul>
 											</div>
-											<a href="https://www.esoft.com/csr-values/" target="">LEARN MORE ABOUT OUR CSR</a>
+											<!-- <a href="https://www.esoft.com/csr-values/" target="">LEARN MORE ABOUT OUR CSR</a> -->
 										</div>
 									</div>
 								</div>
 
-								<div class="row">
+								<!-- <div class="row">
 									<div class="col-xs-12 col-lg-6 left_solution">
 										<div class="solution_img lazy"
 											data-bg="url('https://www.esoft.com/wp-content/uploads/beverage-black-coffee-brewed-coffee-1413652-1543x1000.jpg')">
@@ -622,22 +716,28 @@
 												BLOG</a>
 										</div>
 									</div>
-								</div>
+								</div> -->
 
 							</div>
-							<div class="get_in_touch">
+							<!-- <div class="get_in_touch">
 								<h3>Can we help?</h3>
 								<a href="https://esoft.com/contact/" class="orange_button" target="">GET IN TOUCH</a>
-							</div>
+							</div> -->
 						</div>
-						<div class="people_block">
+						<div class="people_block" style="padding: 0">
 							<div class="people_block_inner">
 								<div class="container">
 									<div class="people_inner_container">
-										<h1>People love working here</h1>
-										<p><span style="font-weight: 400;">We’re committed to creating a company culture and work
-												environment where everyone is treated equally and with respect.</span></p>
-										<a href="https://esoft.com/careers/" class="white_button">Careers</a>
+										<h1>About Us</h1>
+										<ul>
+											<li style="font-weight: 400;">We always put quality first.We know that you are busy and we create
+												services that provide you.</li>
+											<li style="font-weight: 400;">No matter how big or small the job, we always work until you are
+												satisfied.</li>
+										</ul>
+										<!-- <p><span style="font-weight: 400;"></span></p> -->
+										<!-- <p><span style="font-weight: 400;"></span></p> -->
+										<!-- <a href="https://esoft.com/careers/" class="white_button">Careers</a> -->
 									</div>
 								</div>
 								<svg class="icon left_rect_icon">
@@ -645,104 +745,53 @@
 								<svg class="icon right_rect_icon">
 									<use xlink:href="#right_rect" /></svg>
 							</div>
-							<img data-src="https://www.esoft.com/wp-content/uploads/esoft_people_careers_mette@2-min.png"
-								class="person_photo lazy">
+							<img data-src="./images/about-us.jpg" class="person_photo lazy">
 						</div>
 						<div class="connect">
-							<h1>Connect with us.</h1>
+							<!-- <h1>Connect with us.</h1> -->
 							<div class="container">
 								<div class="row">
-									<div class="col-lg-3 col-xs-6">
+									<div class="col-lg-4 col-xs-6">
 										<div class="social_ui">
-											<svg class="icon">
-												<use xlink:href="#facebook_ui" /></svg>
-											<span>Our news</span>
-											<a href="https://www.facebook.com/Esoftglobal/" target="_blank">Follow us</a>
+											<img class="icon medium_icon lazy" src="./images/connect/247.jpg">
+											<span>Work 24/7/365</span>
+											<!-- <a href="https://www.facebook.com/Esoftglobal/" target="_blank">Follow us</a> -->
 										</div>
 									</div>
-									<div class="col-lg-3 col-xs-6">
+									<div class="col-lg-4 col-xs-6">
 										<div class="social_ui ig_soc">
-											<svg class="icon" viewBox="0 0 45 43">
-												<use xlink:href="#instagram_ui" /></svg>
-											<span>Our photography</span>
-											<a href="https://www.instagram.com/esoft/" target="_blank">Follow us</a>
+											<img class="icon medium_icon lazy" src="./images/connect/Free.jpg">
+											<!-- <svg class="icon" viewBox="0 0 45 43">
+												<use xlink:href="./images/connect/Free.jpg" /></svg> -->
+											<span>Free test 5 images</span>
+											<!-- <a href="https://www.instagram.com/esoft/" target="_blank">Follow us</a> -->
 										</div>
 									</div>
-									<div class="col-lg-3 col-xs-6">
+									<div class="col-lg-4 col-xs-6">
 										<div class="social_ui">
-											<svg class="icon">
-												<use xlink:href="#linkedin_ui" /></svg>
-											<span>Our careers</span>
-											<a href="https://www.linkedin.com/company/esoftglobal/" target="_blank">Follow us</a>
+											<img class="icon medium_icon lazy" src="./images/connect/xoayvong.jpg">
+											<!-- <svg class="icon">
+												<use xlink:href="./images/connect/xoayvong.jpg" /></svg> -->
+											<span>Công việc xoay vòng</span>
+											<!-- <a href="https://www.linkedin.com/company/esoftglobal/" target="_blank">Follow us</a> -->
 										</div>
 									</div>
-									<div class="col-lg-3 col-xs-6">
+									<!-- <div class="col-lg-3 col-xs-6">
 										<div class="social_ui">
 											<svg class="icon medium_icon">
 												<use xlink:href="#medium_ui" /></svg>
 											<span>Our articles</span>
 											<a href="https://medium.com/@Esoft" target="_blank">Follow us</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<footer id="footer" class="site-footer">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-7 col-md-6 col-xs-12">
-									<svg class="icon footerLogo">
-										<use xlink:href="#logo" /></svg>
-									<div class="wrap_subscribe_block footer_sub_block">
-										<div class="input_wrap subscribe_block">
-											<span class="mobile-tablet-footer">Newsletter</span>
-											<form method="GET" id='footer_sub'>
-												<input type="text" id='footerMail' name='EMAIL' placeholder='Stay updated. Insert your e-mail'>
-												<a href="#">SUBSCRIBE</a>
-											</form>
-										</div>
-										<input id='agreement' type='checkbox' />
-										<label for='agreement' class='checkbox_text'>
-											<span></span>Yes, I would like to receive news and offers from Esoft
-										</label>
-										<a href="#" class='mobile_subscribe'>SUBSCRIBE</a>
-									</div>
-								</div>
-								<div class="col-lg-5 col-md-6 col-xs-12 footer_col_wrap">
-									<div class="mobile-tablet-footer footerLogoWrapMobile"><svg class="icon mobileFooterLogo">
-											<use xlink:href="#logo" /></svg></div>
-									<div class="footer_col">
-										<span class="footer_subtitle">Solutions</span>
-										<div class="footer_col_list">
-											<a href="https://esoft.com/solutions/" target="">Global</a><a href="https://esoft.com/losninger/"
-												target="">Denmark</a><a href="https://esoft.com/losningar/" target="">Sweden</a> </div>
-									</div>
-									<div class="footer_col">
-										<span class="footer_subtitle">Information</span>
-										<div class="footer_col_list">
-											<a href="https://esoft.com/careers/" target="">Careers</a><a href="https://esoft.com/csr-values/"
-												target="">CSR & Values</a><a href="https://esoft.com/contact/" target="">Contact</a><a
-												href="https://www.esoft.com/en-gdpr" target="">Privacy Policy English</a><a
-												href="https://www.esoft.com/da-gdpr" target="">Privacy Policy Danish</a><a
-												href="https://www.esoft.com/sv-gdpr" target="">Privacy Policy Swedish</a> </div>
-									</div>
-									<div class="footer_col footer_social">
-										<span class="footer_subtitle">Social media</span>
-										<div class="footer_col_list">
-											<a href='https://www.facebook.com/Esoftglobal/' target="_blank"><svg class="icon">
-													<use xlink:href="#facebook" /></svg></a>
-											<a href='https://www.instagram.com/esoft/' target="_blank"><svg class="icon">
-													<use xlink:href="#instagram" /></svg></a>
-											<!-- <a href='' target="_blank"><svg class="icon"><use xlink:href="#twitter"/></svg></a> -->
-											<a href='https://www.linkedin.com/company/esoftglobal/' target="_blank"><svg class="icon">
-													<use xlink:href="#linkedin" /></svg></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="copyright">Copyright © 2020 All rights reserved</div>
+					<footer id="footer" class="site-footer" style="padding: 0">
+						<div class="container" style="padding: 30px 0">
+							<h3>Address: THANH OAI- HA NOI -VIET NAM </h3>
 						</div>
 					</footer><!-- #footer -->
 				</div>
@@ -767,8 +816,7 @@
 		<div class="close_container"></div>
 	</div>
 
-	<script type='text/javascript'
-		src='./js/production.js'></script>
+	<script type='text/javascript' src='./js/production.js'></script>
 	<script type='text/javascript' src='https://www.esoft.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
 	<script src='https://player.vimeo.com/api/player.js'></script>
 	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="745396d0-951f-4a14-ab6a-6156ada6dfb1"
@@ -788,6 +836,14 @@
 		})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
 		subiz('setAccount', 'acqpjwbvagskmxhosyid');
 	</script>
+	<script src="./js/lightbox.min.js"></script>
+	<!-- <script>
+		$( document ).ready(function() {
+			lightbox.option({
+				'disableScrolling': true,
+			});
+		});
+	</script> -->
 </body>
 
 </html>
