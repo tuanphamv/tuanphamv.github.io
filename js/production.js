@@ -1398,7 +1398,7 @@ jQuery(document).ready(function($){
 	$('.sub-menu').width($('.sub-menu').width());
 
 	var iframe = document.querySelector('iframe');
-	var player = new Vimeo.Player(iframe);
+	// var player = new Vimeo.Player(iframe);
 
 	var Homepage = Barba.BaseView.extend({
 	  namespace: 'homepage',
@@ -1643,7 +1643,7 @@ jQuery(document).ready(function($){
 	});
 
 	$('.close_container, .overlay__close-prompt').on('click', function(){
-	    player.pause();
+	    // player.pause();
 	    $('#heroPlayer').attr('src', '');
 		$('.video_overlay').removeClass('slidein');
 	})
@@ -2086,7 +2086,7 @@ jQuery(document).ready(function($){
 		    // var iframe = document.querySelector('iframe');
 		    // var player = new Vimeo.Player(iframe);
 		    setTimeout(function(){
-		    	player.play();
+		    	// player.play();
 		    }, 1000)
 			$('.video_overlay').addClass('slidein');
 
