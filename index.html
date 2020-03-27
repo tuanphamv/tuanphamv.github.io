@@ -54,6 +54,10 @@
 
 	<link href="./css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	<link href="./css/app.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 	<!-- Google Tag Manager -->
 	<script>
@@ -333,16 +337,21 @@
 										</div>
 									</div>
 								</div>
-
+								
+								
 								<div class="img-show">
 									<div class="container">
 										<div class="row">
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg1.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg1.jpg')">
-													</div>
+												<a href="#ex1" rel="modal:open">
+													<img class="lazy" src="./images/content2/bg1.jpg" alt="" width="100%">
 												</a>
+												<div id="ex1" class="modal">
+													<div class="twentytwenty-container" style="height: 500px;width: 600px;">
+														<img src="./images/content2/bg1.jpg" />
+														<img src="./images/content2/bg2.jpg" />
+													</div>
+												</div>
 											</div>
 											<div class="col-lg-3 col-xs-6">
 												<a href="./images/content2/bg2.jpg" data-lightbox="roadtrip">
@@ -543,14 +552,16 @@
 								<div class="row">
 									<div class="col-lg-4 col-xs-6 col-lg-offset-2">
 										<div class="social_ui">
-											<img src="./images/facebook.svg" alt="" width="60px" style="margin-bottom: 15px;">
+											<img src="./images/facebook.svg" alt="" width="60px"
+												style="margin-bottom: 15px;">
 											<span>Facebook</span>
 											<a href="" target="_blank">Follow us</a>
 										</div>
 									</div>
 									<div class="col-lg-4 col-xs-6">
 										<div class="social_ui ig_soc">
-											<img src="./images/skype.svg" alt="" width="60px" style="margin-bottom: 15px;">
+											<img src="./images/skype.svg" alt="" width="60px"
+												style="margin-bottom: 15px;">
 											<span>Skype</span>
 											<a href="" target="_blank">Chat with us</a>
 										</div>
@@ -575,14 +586,19 @@
 	<script type='text/javascript' src='./js/production.js'></script>
 	<script type='text/javascript' src='https://www.esoft.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
 	<script src="./js/lightbox.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
 	<script src="js/jquery.event.move.js"></script>
 	<script src="js/jquery.twentytwenty.js"></script>
 	<script>
-		// $(function(){
-		// 	$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-		// 	$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-		// });
+		$(function () {
+			$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+				default_offset_pct: 0.7
+			});
+			$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+				default_offset_pct: 0.3,
+				orientation: 'vertical'
+			});
+		});
 	</script>
 	<!-- <script>
 		$( document ).ready(function() {

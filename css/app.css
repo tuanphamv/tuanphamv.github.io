@@ -60,3 +60,11 @@ img.emoji {
 .website .connect {
     padding-top: 0;
 }
+
+.twentytwenty-wrapper{
+    height: 500px;
+}
+
+.twentytwenty-container{
+    height: 500px !important;
+}
