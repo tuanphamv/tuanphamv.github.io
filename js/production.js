@@ -2036,8 +2036,8 @@ jQuery(document).ready(function($){
 				$('.hero_other').css('min-height', $mheight);
 			}
 			if(width < 1200){
-				hamburger_right = $('body').width() - $('.login_menu').outerWidth() - $('.login_menu').offset().left + $('.hamburger_wrap').width();
-				$('.hamburger_wrap').css('right', hamburger_right);
+				// hamburger_right = $('body').width() - $('.login_menu').outerWidth() - $('.login_menu').offset().left + $('.hamburger_wrap').width();
+				// $('.hamburger_wrap').css('right', hamburger_right);
 			}else{
 				position_menu();
 			}

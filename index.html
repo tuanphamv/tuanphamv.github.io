@@ -33,19 +33,16 @@
 		href='https://www.esoft.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css'
 		media='all' />
 	<link rel='stylesheet' id='esoft-style-css' href='./css/style.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='esoft-style-css' href='./css/lightbox.min.css' type='text/css' media='all' />
 	<link rel='https://api.w.org/' href='https://www.esoft.com/wp-json/' />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.esoft.com/xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml"
-		href="https://www.esoft.com/wp-includes/wlwmanifest.xml" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.esoft.com/wp-includes/wlwmanifest.xml" />
 	<meta name="generator" content="WordPress 5.3.2" />
 	<link rel='shortlink' href='https://www.esoft.com/' />
 	<link rel="alternate" type="application/json+oembed"
 		href="https://www.esoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.esoft.com%2F" />
 	<link rel="alternate" type="text/xml+oembed"
 		href="https://www.esoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.esoft.com%2F&#038;format=xml" />
-	<link rel="apple-touch-icon-precomposed"
-		href="https://www.esoft.com/wp-content/uploads/2019/04/esoft_favicon.png" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.esoft.com/wp-content/uploads/2019/04/esoft_favicon.png" />
 	<meta name="msapplication-TileImage" content="https://www.esoft.com/wp-content/uploads/2019/04/esoft_favicon.png" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400i,400,500,500i,600,700&display=swap"
 		rel="stylesheet">
@@ -54,9 +51,8 @@
 
 	<link href="./css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	<link href="./css/app.css" rel="stylesheet" type="text/css" />
-	<script src="https://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 	<!-- Google Tag Manager -->
@@ -142,7 +138,7 @@
 													of experience.</span></p>
 											<p><span style="font-weight: 400;">Our team started with 15 editors who can
 													provide 2500 photos per day.</span></p>
-											<a href="#introduce" class="orange_button">
+											<a onclick="scrollToId('introduce')" class="orange_button">
 												<span>Read more</span>
 											</a>
 										</div>
@@ -156,7 +152,7 @@
 													your needs, whether you are in search of professional digital
 													showings, intelligent marketing tools or great premium
 													photos.</span></p>
-											<a href="#photoEditing" class="orange_button">
+											<a onclick="scrollToId('photoEditing')" class="orange_button">
 												<span>Read more</span>
 											</a>
 										</div>
@@ -171,7 +167,7 @@
 													rooms and picture their furniture inside the home.</span></p>
 											<p><span style="font-weight: 400;">80% of buyers interest a home listing
 													completely include a floor plan.</span></p>
-											<a href="#floorPlans" class="orange_button">
+											<a onclick="scrollToId('floorPlans')" class="orange_button">
 												<span>Read more</span>
 											</a>
 										</div>
@@ -189,7 +185,7 @@
 											<!-- <a href="https://www.esoft.com/solutions/shine/" class="orange_button">
 												<span>Shine with us</span>
 											</a> -->
-											<a href="#contactUs" class="orange_button">
+											<a onclick="scrollToId('contactUs')" class="orange_button">
 												<span>Read more</span>
 											</a>
 										</div>
@@ -198,9 +194,8 @@
 							</div>
 							<div class="slide_image">
 								<div class="slide_image_inner">
-									<svg viewBox="0 100 868 740" id='sliderSVG' width='1078px' height='798px'
-										version="1.1" xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink">
+									<svg viewBox="0 100 868 740" id='sliderSVG' width='1078px' height='798px' version="1.1"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 										<defs>
 											<mask id="clip-path-hero-ie-front">
 												<image width="100%" height="100%"
@@ -215,13 +210,13 @@
 													xlink:href="https://www.esoft.com/wp-content/themes/esoft/img/homemask.svg" />
 											</mask>
 											<filter id="offsetShadow" x="-20%" y="-10%" height="130%" width="140%">
-												<feDropShadow dx="10" dy="10" stdDeviation="20" flood-color="#FF8200"
-													flood-opacity="0.25" filterUnits="objectBoundingBox" />
+												<feDropShadow dx="10" dy="10" stdDeviation="20" flood-color="#FF8200" flood-opacity="0.25"
+													filterUnits="objectBoundingBox" />
 											</filter>
 										</defs>
 										<g id='slider_image_wrap'>
-											<image data-slide='1' class='hero_mask_home current_image' width='1058px'
-												height='800px' xlink:href="./images/slider/bg1.jpg" />
+											<image data-slide='1' class='hero_mask_home current_image' width='1058px' height='800px'
+												xlink:href="./images/slider/bg1.jpg" />
 											<image data-slide='2' class='hero_mask_home ' width='1058px' height='800px'
 												xlink:href="./images/slider/bg2.jpg" />
 											<image data-slide='3' class='hero_mask_home ' width='1058px' height='800px'
@@ -337,83 +332,59 @@
 										</div>
 									</div>
 								</div>
-								
-								
+
+
 								<div class="img-show">
 									<div class="container">
 										<div class="row">
 											<div class="col-lg-3 col-xs-6">
-												<a href="#ex1" rel="modal:open">
-													<img class="lazy" src="./images/content2/bg1.jpg" alt="" width="100%">
-												</a>
-												<div id="ex1" class="modal">
-													<div class="twentytwenty-container" style="height: 500px;width: 600px;">
-														<img src="./images/content2/bg1.jpg" />
-														<img src="./images/content2/bg2.jpg" />
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg2.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg2.jpg')">
-													</div>
+												<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(1)">
+													<img class="lazy" src="./images/Basic/after1.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg3.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg3.jpg')">
-													</div>
+												<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(2)">
+													<img class="lazy" src="./images/Basic/after2.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg4.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg4.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(3)">
+													<img class="lazy" src="./images/Basic/after3.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg5.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg5.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(4)">
+													<img class="lazy" src="./images/Basic/after4.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg6.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg6.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(5)">
+													<img class="lazy" src="./images/Basic/after5.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg7.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg7.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(6)">
+													<img class="lazy" src="./images/Basic/after6.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg8.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg8.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(7)">
+													<img class="lazy" src="./images/Basic/after7.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg9.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg9.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(8)">
+													<img class="lazy" src="./images/Basic/after8.jpg">
 												</a>
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<a href="./images/content2/bg10.jpg" data-lightbox="roadtrip">
-													<div class="solution_img lazy"
-														data-bg="url('./images/content2/bg10.jpg')">
-													</div>
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(9)">
+													<img class="lazy" src="./images/Basic/after9.jpg">
+												</a>
+											</div>
+											<div class="col-lg-3 col-xs-6">
+													<a href="#imgModal" rel="modal:open" class="img-modal" onclick="openImgModal(10)">
+													<img class="lazy" src="./images/Basic/after10.jpg">
 												</a>
 											</div>
 										</div>
@@ -552,16 +523,14 @@
 								<div class="row">
 									<div class="col-lg-4 col-xs-6 col-lg-offset-2">
 										<div class="social_ui">
-											<img src="./images/facebook.svg" alt="" width="60px"
-												style="margin-bottom: 15px;">
+											<img src="./images/facebook.svg" alt="" width="60px" style="margin-bottom: 15px;">
 											<span>Facebook</span>
 											<a href="" target="_blank">Follow us</a>
 										</div>
 									</div>
 									<div class="col-lg-4 col-xs-6">
 										<div class="social_ui ig_soc">
-											<img src="./images/skype.svg" alt="" width="60px"
-												style="margin-bottom: 15px;">
+											<img src="./images/skype.svg" alt="" width="60px" style="margin-bottom: 15px;">
 											<span>Skype</span>
 											<a href="" target="_blank">Chat with us</a>
 										</div>
@@ -571,42 +540,82 @@
 						</div>
 					</div>
 
+					<button class="orange_button btn-top" id="scrollToTop" title="Go to top">
+						Top
+					</button>
+
 					<footer id="footer" class="site-footer" style="padding: 0">
 						<div class="container" style="padding: 30px 0">
 							<h3>Address: THANH OAI- HA NOI -VIET NAM </h3>
 						</div>
-					</footer><!-- #footer -->
+					</footer>
 				</div>
-				<!--Barba container-->
 			</div>
-			<!--Barba wrapper-->
 		</div>
-		<!--Web wrapper-->
-	</div><!-- #page -->
+	</div>
+
+	<div id="imgModal" class="modal">
+		<div class="twentytwenty-container">
+			<img class="img1" />
+			<img class="img2" />
+		</div>
+	</div>
+
 	<script type='text/javascript' src='./js/production.js'></script>
 	<script type='text/javascript' src='https://www.esoft.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
-	<script src="./js/lightbox.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="js/jquery.event.move.js"></script>
 	<script src="js/jquery.twentytwenty.js"></script>
 	<script>
 		$(function () {
-			$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-				default_offset_pct: 0.7
-			});
-			$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-				default_offset_pct: 0.3,
-				orientation: 'vertical'
-			});
+			$(".twentytwenty-container").twentytwenty();
+		});
+
+		// $(document).ready(function () {
+		// 	$('.img-modal').click(function () {
+		// 		setTimeout(() => {
+		// 			$(".twentytwenty-container").height(500);
+		// 			var width = $(".twentytwenty-wrapper").width();
+		// 			var height = $(".twentytwenty-wrapper").height();
+		// 			var img1 = 'rect(0px,' + width / 2 + 'px,' + height + 'px, 0px)';
+		// 			var img2 = 'rect(0px,' + width + 'px,' + height + 'px,' + width / 2 + 'px)';
+		// 			$(".img1").css('clip', img1);
+		// 			$(".img2").css('clip', img2);
+		// 			$(".twentytwenty-handle").css('left', width / 2 + 'px');
+		// 			console.log(width, height);
+		// 		}, 0);
+		// 	});
+		// });
+
+		function openImgModal(id) {
+			$("#imgModal .twentytwenty-container .img1").attr("src",'./images/Basic/before' + id + '.jpg');
+			$("#imgModal .twentytwenty-container .img2").attr("src",'./images/Basic/after' + id + '.jpg');
+			setTimeout(() => {
+				$("#imgModal .twentytwenty-container").height(500);
+				let width = $("#imgModal .twentytwenty-wrapper").width();
+				let height = $("#imgModal .twentytwenty-wrapper").height();
+				let img1 = 'rect(0px,' + width / 2 + 'px,' + height + 'px, 0px)';
+				let img2 = 'rect(0px,' + width + 'px,' + height + 'px,' + width / 2 + 'px)';
+				$("#imgModal .twentytwenty-container .img1").css('clip', img1);
+				$("#imgModal .twentytwenty-container .img2").css('clip', img2);
+				$("#imgModal .twentytwenty-container .twentytwenty-handle").css('left', width / 2 + 'px');
+				console.log(width, height);
+			}, 0);
+		}
+
+		function scrollToId(id) {
+			$('html, body').animate({
+				scrollTop: $("#" + id).offset().top
+			}, 1500);
+		}
+
+		$('#scrollToTop').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
 		});
 	</script>
-	<!-- <script>
-		$( document ).ready(function() {
-			lightbox.option({
-				'disableScrolling': true,
-			});
-		});
-	</script> -->
 </body>
 
 </html>

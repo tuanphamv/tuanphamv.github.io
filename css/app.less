@@ -1,0 +1,96 @@
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.scrolled #masthead {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    #solutions .img-show .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px !important;
+    }
+
+    #solutions .img-show .row>div {
+        width: 20%;
+        padding-bottom: 30px;
+    }
+}
+
+.connect.contact-us .social_ui {
+    padding: 50px 0 30px
+}
+
+.connect.contact-us span {
+    margin-bottom: 25px;
+}
+
+.website .connect {
+    padding-top: 0;
+}
+
+.orange_button{
+    cursor: pointer;
+}
+.btn-top{
+    position: fixed;
+    bottom: 100px;
+    right: 52px;
+    left: unset;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 50%;
+    margin: 0;
+    z-index: 99;
+}
+
+.btn-top:focus{
+    outline: none;
+}
+
+.jquery-modal {
+    z-index: 99999 !important;
+    .modal{
+      max-width: unset;
+      max-width: ~ "calc(100% - 200px)";
+      width: 750px;
+      max-height: ~ "calc(100% - 100px)";
+      height: 500px;
+      .twentytwenty-wrapper{
+        height: 100%;
+        width: 100%;
+        .twentytwenty-container, img{
+          height: 100% !important;
+          width: 100% !important;
+        }
+      }
+    }
+}
+#solutions .img-show .img-modal{
+  img{
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+
+#solutions .img-show .row>div {
+  padding-bottom: 30px;
+}
