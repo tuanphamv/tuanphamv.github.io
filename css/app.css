@@ -2,10 +2,11 @@ img.wp-smiley,
 img.emoji {
   display: inline !important;
   border: none !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   height: 1em !important;
   width: 1em !important;
-  margin: 0 0.07em !important;
+  margin: 0 .07em !important;
   vertical-align: -0.1em !important;
   background: none !important;
   padding: 0 !important;
@@ -15,10 +16,15 @@ img.emoji {
 }
 @media screen and (min-width: 768px) {
   #solutions .img-show .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 100px !important;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #solutions .img-show .row > div {
     width: 20%;
@@ -45,7 +51,8 @@ img.emoji {
   width: 50px;
   height: 50px;
   border: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 50%;
   margin: 0;
   z-index: 99;
@@ -79,8 +86,12 @@ img.emoji {
 }
 #solutions .img-show .img-modal img:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 #solutions .img-show .row > div {
   padding-bottom: 30px;
+}
+.max-width-unset {
+  max-width: unset !important;
 }

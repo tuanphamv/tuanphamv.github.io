@@ -41,10 +41,11 @@ img.emoji {
     padding-top: 0;
 }
 
-.orange_button{
+.orange_button {
     cursor: pointer;
 }
-.btn-top{
+
+.btn-top {
     position: fixed;
     bottom: 100px;
     right: 25px;
@@ -58,40 +59,50 @@ img.emoji {
     z-index: 99;
 }
 
-.btn-top:focus{
+.btn-top:focus {
     outline: none;
 }
 
 .jquery-modal {
     z-index: 99999 !important;
-    .modal{
-      max-width: unset;
-      max-width: ~ "calc(100% - 200px)";
-      width: 900px;
-      max-height: ~ "calc(100% - 100px)";
-      height: 700px;
-      .twentytwenty-wrapper{
-        height: 100%;
-        width: 100%;
-        .twentytwenty-container, img{
-          height: 100% !important;
-          width: 100% !important;
+
+    .modal {
+        max-width: unset;
+        max-width: calc(~"100% - 200px");
+        width: 900px;
+        max-height: calc(~"100% - 100px");
+        height: 700px;
+
+        .twentytwenty-wrapper {
+            height: 100%;
+            width: 100%;
+
+            .twentytwenty-container,
+            img {
+                height: 100% !important;
+                width: 100% !important;
+            }
         }
-      }
     }
 }
-#solutions .img-show .img-modal{
-  img{
-    width: 100%;
-    height: 200px;
-    border-radius: 25px;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
+
+#solutions .img-show .img-modal {
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 25px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
     }
-  }
 }
 
 #solutions .img-show .row>div {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.max-width-unset {
+    max-width: unset !important;
 }
