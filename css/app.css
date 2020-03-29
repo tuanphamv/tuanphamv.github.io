@@ -18,6 +18,7 @@ img.emoji {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px !important;
+    justify-content: center;
   }
   #solutions .img-show .row > div {
     width: 20%;
@@ -39,7 +40,7 @@ img.emoji {
 .btn-top {
   position: fixed;
   bottom: 100px;
-  right: 52px;
+  right: 25px;
   left: unset;
   width: 50px;
   height: 50px;
