@@ -15,20 +15,6 @@ img.emoji {
     display: none !important;
 }
 
-@media screen and (min-width: 768px) {
-    #solutions .img-show .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 100px !important;
-        justify-content: center
-    }
-
-    #solutions .img-show .row>div {
-        width: 20%;
-        padding-bottom: 30px;
-    }
-}
-
 .connect.contact-us .social_ui {
     padding: 50px 0 30px
 }
@@ -68,8 +54,8 @@ img.emoji {
 
     .modal {
         max-width: unset;
-        width: 1140px;
-        height: 760px;
+        width: 1600px;
+        height: 1068px;
         @media screen and (max-width: 1400px){
             width: calc(100% - 200px);
             height: 100%;
@@ -110,4 +96,24 @@ img.emoji {
 
 .mb-0{
     margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+    #solutions .img-show .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px !important;
+        justify-content: center
+    }
+
+    #solutions .img-show .row>div {
+        width: 20%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padding-0{
+        padding: 0 !important
+    }
 }
