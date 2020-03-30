@@ -6,6 +6,9 @@ body .connect a:after {
 body a {
   color: red;
 }
+body .connect a {
+  border-bottom-color: red;
+}
 img.wp-smiley,
 img.emoji {
   display: inline !important;
@@ -36,7 +39,7 @@ img.emoji {
 }
 .btn-top {
   position: fixed;
-  bottom: 100px;
+  bottom: 25px;
   right: 25px;
   left: unset;
   width: 50px;
@@ -128,6 +131,10 @@ img.emoji {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .site-footer .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 @media screen and (max-width: 991px) {
