@@ -58,8 +58,14 @@ img.emoji {
 }
 .jquery-modal .modal {
   max-width: unset;
-  width: calc(100% - 200px);
-  height: 100%;
+  width: 1140px;
+  height: 760px;
+}
+@media screen and (max-width: 1400px) {
+  .jquery-modal .modal {
+    width: calc(100% - 200px);
+    height: 100%;
+  }
 }
 .jquery-modal .modal .twentytwenty-wrapper {
   height: 100%;

@@ -68,8 +68,12 @@ img.emoji {
 
     .modal {
         max-width: unset;
-        width: calc(~"100% - 200px");
-        height: 100%;
+        width: 1140px;
+        height: 760px;
+        @media screen and (max-width: 1400px){
+            width: calc(100% - 200px);
+            height: 100%;
+        }
         .twentytwenty-wrapper {
             height: 100%;
             width: 100%;
