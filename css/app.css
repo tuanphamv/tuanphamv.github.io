@@ -1,11 +1,20 @@
+body .orange_button,
+body .connect a:before,
+body .connect a:after {
+  background: red;
+}
+body a {
+  color: red;
+}
 img.wp-smiley,
 img.emoji {
   display: inline !important;
   border: none !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   height: 1em !important;
   width: 1em !important;
-  margin: 0 0.07em !important;
+  margin: 0 .07em !important;
   vertical-align: -0.1em !important;
   background: none !important;
   padding: 0 !important;
@@ -33,7 +42,8 @@ img.emoji {
   width: 50px;
   height: 50px;
   border: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 50%;
   margin: 0;
   z-index: 99;
@@ -41,13 +51,17 @@ img.emoji {
 .btn-top:focus {
   outline: none;
 }
+#solutions .solution_img {
+  -webkit-box-shadow: 18px 25px 57px -33px #ff0000;
+          box-shadow: 18px 25px 57px -33px #ff0000;
+}
 .jquery-modal {
   z-index: 99999 !important;
 }
 .jquery-modal .modal {
   max-width: unset;
-  width: 1600px;
-  height: 1068px;
+  width: 1200px;
+  height: 800px;
 }
 @media screen and (max-width: 1400px) {
   .jquery-modal .modal {
@@ -71,7 +85,8 @@ img.emoji {
 }
 #solutions .img-show .img-modal img:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 #solutions .img-show .row > div {
   padding-bottom: 30px;
@@ -84,10 +99,15 @@ img.emoji {
 }
 @media screen and (min-width: 768px) {
   #solutions .img-show .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px !important;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #solutions .img-show .row > div {
     width: 20%;
@@ -97,5 +117,26 @@ img.emoji {
 @media screen and (max-width: 767px) {
   .padding-0 {
     padding: 0 !important;
+  }
+  .connect .icon.medium_icon {
+    height: 150px;
+  }
+  #solutions .img-show .img-modal img {
+    height: 160px;
+  }
+  .content-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .connect:not(.contact-us) .row .social_ui {
+    padding: 0;
+  }
+}
+@media (max-width: 1199.5px) and (min-width: 992px) {
+  #solutions .row {
+    max-width: 100%;
   }
 }

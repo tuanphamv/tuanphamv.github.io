@@ -1,3 +1,11 @@
+body{
+    .orange_button,.connect a:before,.connect a:after{
+        background: red;
+    }
+    a{
+        color: red;
+    }
+} 
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -49,15 +57,19 @@ img.emoji {
     outline: none;
 }
 
+#solutions .solution_img{
+    box-shadow: 18px 25px 57px -33px rgb(255,0,0,0.8);
+}
+
 .jquery-modal {
     z-index: 99999 !important;
 
     .modal {
         max-width: unset;
-        width: 1600px;
-        height: 1068px;
+        width: 1200px;
+        height: 800px;
         @media screen and (max-width: 1400px){
-            width: calc(100% - 200px);
+            width: calc(~"100% - 200px");
             height: 100%;
         }
         .twentytwenty-wrapper {
@@ -102,7 +114,7 @@ img.emoji {
     #solutions .img-show .row {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 100px !important;
+        margin-bottom: 50px;
         justify-content: center
     }
 
@@ -115,5 +127,26 @@ img.emoji {
 @media screen and (max-width: 767px) {
     .padding-0{
         padding: 0 !important
+    }
+    .connect .icon.medium_icon{
+        height: 150px;
+    }
+    #solutions .img-show .img-modal img{
+        height: 160px;
+    }
+    .content-center{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .connect:not(.contact-us) .row .social_ui{
+        padding: 0;
+    }
+}
+
+@media (max-width: 1199.5px) and (min-width: 992px){
+    #solutions .row {
+       max-width: 100%;
     }
 }

@@ -2324,8 +2324,8 @@ jQuery(document).ready(function($){
 		var circleDuration = 5000;
 
 	    var circle1 = new ProgressBar.Circle('.circle1', {
-	        color: '#FF8200',
-	        trailColor: '#D8D8D8',
+	        color: 'red',
+	        trailColor: 'red',
 	        strokeWidth: 4,
 	        duration: circleDuration,
 	        easing: 'easeInOut',
@@ -2339,8 +2339,8 @@ jQuery(document).ready(function($){
 
 	    });
 	    var circle2 = new ProgressBar.Circle('.circle2', {
-	        color: '#FF8200',
-	        trailColor: '#D8D8D8',
+	        color: 'red',
+	        trailColor: 'red',
 	        strokeWidth: 4,
 	        duration: circleDuration,
 	        easing: 'easeInOut',
@@ -2355,8 +2355,8 @@ jQuery(document).ready(function($){
 
 	    });
 	    var circle3 = new ProgressBar.Circle('.circle3', {
-	        color: '#FF8200',
-	        trailColor: '#D8D8D8',
+	        color: 'red',
+	        trailColor: 'red',
 	        strokeWidth: 4,
 	        duration: circleDuration,
 	        easing: 'easeInOut',
@@ -2371,8 +2371,8 @@ jQuery(document).ready(function($){
 
 	    });
 	    var circle4 = new ProgressBar.Circle('.circle4', {
-	        color: '#FF8200',
-	        trailColor: '#D8D8D8',
+	        color: 'red',
+	        trailColor: 'red',
 	        strokeWidth: 4,
 	        duration: circleDuration,
 	        easing: 'easeInOut',
