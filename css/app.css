@@ -27,6 +27,7 @@ img.emoji {
 }
 .connect.contact-us .social_ui {
   padding: 50px 0 30px;
+  overflow: hidden;
 }
 .connect.contact-us span {
   margin-bottom: 25px;
@@ -57,6 +58,10 @@ img.emoji {
 #solutions .solution_img {
   -webkit-box-shadow: 18px 25px 57px -33px #ff0000;
           box-shadow: 18px 25px 57px -33px #ff0000;
+}
+.slide_image .hero_mask_home {
+  -webkit-mask: unset;
+          mask: unset;
 }
 .jquery-modal {
   z-index: 99999 !important;
@@ -135,6 +140,12 @@ img.emoji {
   .site-footer .container {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  .connect.contact-us .col-sm-4 {
+    padding-right: 0;
+  }
+  .connect.contact-us .social_ui {
+    padding: 20px 0;
   }
 }
 @media screen and (max-width: 991px) {

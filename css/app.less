@@ -27,7 +27,8 @@ img.emoji {
 }
 
 .connect.contact-us .social_ui {
-    padding: 50px 0 30px
+    padding: 50px 0 30px;
+    overflow: hidden;
 }
 
 .connect.contact-us span {
@@ -62,6 +63,10 @@ img.emoji {
 
 #solutions .solution_img{
     box-shadow: 18px 25px 57px -33px rgb(255,0,0,0.8);
+}
+
+.slide_image .hero_mask_home{
+    mask: unset;
 }
 
 .jquery-modal {
@@ -143,6 +148,14 @@ img.emoji {
     .site-footer .container{
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+    .connect.contact-us{
+        .col-sm-4{
+            padding-right: 0;
+        }
+        .social_ui{
+            padding: 20px 0;
+        }
     }
 }
 
