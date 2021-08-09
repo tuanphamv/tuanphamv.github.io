@@ -15,9 +15,20 @@
         @media screen and (max-width: 767px) {
             padding: 2.6rem 0;
         }
+        .row:not(:last-child) {
+            @media screen and (min-width: 767px) {
+                margin-bottom: 2.5rem;
+            }
+        }
         .col-xs-12 {
             @media screen and (max-width: 767px) {
                 margin-top: 2rem;
+            }
+        }
+        .footer__item--address {
+            p {
+                font-weight: normal;
+                opacity: 0.8;
             }
         }
     }

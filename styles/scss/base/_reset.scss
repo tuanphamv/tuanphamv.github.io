@@ -63,6 +63,10 @@ h6 {
     font-weight: 500;
 }
 
+.font-normal {
+    font-weight: normal;
+}
+
 @each $margin in $listMargin {
     .mt-#{$margin} {
         margin-top: #{0.1 * $margin}rem !important;

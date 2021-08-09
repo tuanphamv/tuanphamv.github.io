@@ -14,6 +14,10 @@
     color: $color-yellow;
 }
 
+.text-error {
+    color: red;
+}
+
 .section-padding {
     padding: 10rem 0 2rem;
     @media screen and (max-width: 767px) {

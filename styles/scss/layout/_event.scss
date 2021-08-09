@@ -8,6 +8,7 @@
         background-position: left -264px;
         @include position-absolute($top: -99px, $left: 0);
         @include box(1600px, 901px);
+        max-width: 100%;
     }
 }
 .fpt__event {

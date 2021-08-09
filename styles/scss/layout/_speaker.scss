@@ -44,7 +44,7 @@
         text-indent: -9999px;
         background-color: transparent;
         transform: translateY(-50%);
-        @include position-absolute($top: 50%);
+        @include position-absolute($top: 32%);
         @include box(24px);
         &.slick-prev {
             left: -30px;
@@ -52,12 +52,18 @@
             @media screen and (max-width: 767px) {
                 left: -10px;
             }
+            @media screen and (min-width: 1200px) and (max-width: 1240px) {
+                left: -16px;
+            }
         }
         &.slick-next {
             right: -30px;
             background: url('../image/dot-arrow-right.png') no-repeat;
             @media screen and (max-width: 767px) {
                 right: -10px;
+            }
+            @media screen and (min-width: 1200px) and (max-width: 1240px) {
+                right: -16px;
             }
         }
     }

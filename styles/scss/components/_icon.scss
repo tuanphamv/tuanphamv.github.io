@@ -27,6 +27,16 @@
     @include box(60px);
 }
 
+.icon-profit {
+    background: url('../image/icon-4.png') no-repeat;
+    @include box(60px);
+}
+
+.icon-trend {
+    background: url('../image/icon-5.png') no-repeat;
+    @include box(60px);
+}
+
 .fpt-icon {
     @include box(28px);
     @extend %flex-center;
