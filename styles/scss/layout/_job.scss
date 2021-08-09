@@ -10,18 +10,20 @@
         z-index: 1;
         background-color: rgba(13, 34, 40, 0.7);
         @include box-shadow(0, 4px, 12px, rgba(0, 0, 0, 0.08));
-        &:before {
-            content: '';
-            background: url('../image/border-left-top.png') no-repeat;
-            @include box(100%);
-            @include position-absolute($top: 0, $left: 0);
-        }
-        &:after {
-            content: '';
-            background: url('../image/border-right-bottom.png') no-repeat;
-            @include box(331px, 248px);
-            @include position-absolute($bottom: 0, $right: 0);
-        }
+        background: url('../image/job-bg.png') no-repeat;
+        background-size: 100% 100%;
+        // &:before {
+        //     content: '';
+        //     background: url('../image/border-left-top.png') no-repeat;
+        //     @include box(100%);
+        //     @include position-absolute($top: 0, $left: 0);
+        // }
+        // &:after {
+        //     content: '';
+        //     background: url('../image/border-right-bottom.png') no-repeat;
+        //     @include box(331px, 248px);
+        //     @include position-absolute($bottom: 0, $right: 0);
+        // }
     }
     &--title {
         padding: 2.8rem;

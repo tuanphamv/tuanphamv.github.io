@@ -24,6 +24,9 @@
 .btn-success {
     background-color: $color-primary;
     color: $white;
+    &:hover {
+        color: $white;
+    }
 }
 
 .btn-icon-left {
