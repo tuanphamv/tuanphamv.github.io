@@ -1,0 +1,45 @@
+.tab__wrapper {
+    margin-top: 4rem;
+}
+
+.tab-control {
+    .nav-item {
+        padding: 0 2rem;
+    }
+    .nav-link {
+        font-size: 2rem;
+        line-height: 2.1rem;
+        color: $color-secondary;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 1.8rem 1.6rem;
+        @include border-radius(30px);
+        @include transition();
+        &.active, &:hover {
+            background-color: $white;
+            color: $color-primary;
+            @include box-shadow(4px, 5px, 20px, rgba(0, 112, 185, 0.15));
+        }
+    }
+}
+
+.tab-content {
+    margin: 5rem 14rem 0;
+    background-color: $color-gray;
+    @include border-radius(4px);
+}
+.tab__content {
+    flex: 1 50%;
+    &--right {
+        padding: 4.8rem;
+    }
+    .tab-title {
+        color: $color-secondary;
+        margin-bottom: 0;
+    }
+    .tab__description {
+        margin-top: 2.4rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+}

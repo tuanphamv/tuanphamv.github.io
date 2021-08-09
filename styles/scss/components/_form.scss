@@ -1,0 +1,54 @@
+.gutter-12 {
+    @include gutter(12);
+}
+.gutter-30 {
+    @include gutter(30);
+}
+
+.form-control {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: .6rem .8rem;
+    border-color: rgba(32, 34, 68, 0.12);
+    color: $color-text-2;
+    @include border-radius(4px);
+    @include placeholder {
+        color: $placeholder;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+    label {
+        color: $white;
+        line-height: 1.6rem;
+        margin-bottom: .6rem;
+    }
+}
+
+.fpt-textarea {
+    min-height: 62px;
+    resize: none;
+    width: 100%;
+    padding: 1rem .8rem;
+    @include placeholder {
+        color: $placeholder;
+    }
+}
+
+.fpt-select {
+    display: block;
+    width: 100%;
+    min-height: 32px;
+    color: $placeholder;
+    padding: 0 .5rem;
+}
+
+.form-upload-file {
+    position: relative;
+    span {
+        background: url('../image/icon-upload.png') no-repeat center;
+        @extend %d-inline-flex;
+        @include box(20px);
+    }
+}

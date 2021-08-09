@@ -1,0 +1,45 @@
+.fpt-footer {
+    background: url('../image/footer.png') no-repeat;
+    background-size: cover;
+    background-color: $background-2;
+}
+
+.footer {
+    &__top {
+        padding: 1.9rem 0;
+    }
+
+    &__center {
+        padding: 7.6rem 0;
+        border-top: 1px solid $color-line;
+        @media screen and (max-width: 767px) {
+            padding: 2.6rem 0;
+        }
+        .col-xs-12 {
+            @media screen and (max-width: 767px) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__logo {
+        img {
+            width: 56px;
+        }
+    }
+}
+
+.footer__social--list {
+    ul {
+        li {
+            padding-left: 2rem;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.fpt__copyright {
+    padding: 1.5rem 0;
+}

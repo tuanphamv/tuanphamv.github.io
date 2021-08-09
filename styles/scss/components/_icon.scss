@@ -1,0 +1,41 @@
+.icon-checkbox {
+    background-image: url('../image/icon-list.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    @include box(20px);
+    @extend %flex-center;
+}
+
+.icon-btn {
+    background: url('../image/icon-btn.png') no-repeat center;
+    @include box(24px);
+    @extend %flex-center;
+}
+
+.icon-setting {
+    background: url('../image/icon-1.png') no-repeat;
+    @include box(60px);
+}
+
+.icon-ai {
+    background: url('../image/icon-2.png') no-repeat;
+    @include box(60px);
+}
+
+.icon-computer-lock {
+    background: url('../image/icon-3.png') no-repeat;
+    @include box(60px);
+}
+
+.fpt-icon {
+    @include box(28px);
+    @extend %flex-center;
+}
+
+.icon-time {
+    background: url('../image/icon-calendar.png') no-repeat;
+}
+
+.icon-book {
+    background: url('../image/icon-work.png') no-repeat;
+}

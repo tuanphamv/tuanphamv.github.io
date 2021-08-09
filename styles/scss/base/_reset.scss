@@ -1,0 +1,85 @@
+html {
+    font-size: 10px;
+    body {
+        font-size: $font-size;
+        line-height: 1.4;
+        color: $white;
+        font-family: 'SVN-Gilroy';
+        font-weight: 500;
+    }
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-secondary;
+    &:hover {
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: $font-h1;
+    @media screen and (max-width: 1024px) {
+        font-size: 3.6rem;
+    }
+}
+
+h2 {
+    font-size: $font-h2;
+}
+
+h3 {
+    font-size: $font-h3;
+}
+
+h5 {
+    font-size: $font-h5;
+}
+
+h6 {
+    font-size: $font-h6;
+}
+
+.font-semi-bold {
+    font-weight: 800;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+@each $margin in $listMargin {
+    .mt-#{$margin} {
+        margin-top: #{0.1 * $margin}rem !important;
+    }
+    .mb-#{$margin} {
+        margin-bottom: #{0.1 * $margin}rem !important;
+    }
+    .ml-#{$margin} {
+        margin-left: #{0.1 * $margin}rem !important;
+    }
+    .mr-#{$margin} {
+        margin-right: #{0.1 * $margin}rem !important;
+    }
+}
+
+@each $fs in $listFontsize {
+    .fs-#{$fs} {
+        font-size: #{0.1 * $fs}rem !important;
+    }
+}

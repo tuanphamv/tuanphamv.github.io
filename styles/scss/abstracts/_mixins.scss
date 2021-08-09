@@ -1,0 +1,120 @@
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin transition($transition: all .3s ease) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin position-absolute($top: null, $bottom: null, $left: null, $right: null) {
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
+
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+  
+@mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+  
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+  
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+  
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin gutter( $gutterWidth ) {
+    margin-right: -#{$gutterWidth / 2}px;
+    margin-left: -#{$gutterWidth / 2}px;
+
+    > .col,
+    > [class^="col-"],
+    > [class^=" col-"] {
+        padding-right: #{$gutterWidth / 2}px;
+        padding-left: #{$gutterWidth / 2}px;
+    }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $color;
+        -moz-box-shadow:inset $top $left $blur $color;
+        box-shadow:inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+%d-flex {
+    @include flex();
+}
+
+%d-inline-flex {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+%flex-center {
+    @extend %d-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%item-vert {
+    @extend %d-flex;
+    @extend %align-item-center;
+}
+
+%align-item-center {
+    align-items: center;
+}
+
+%justify-content-center {
+    justify-content: center
+}
+
+%justify-content-between {
+    justify-content: space-between;
+}
+
+%justify-content-end {
+    justify-content: flex-end;
+}
