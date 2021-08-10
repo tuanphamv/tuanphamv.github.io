@@ -139,6 +139,20 @@ $(document).ready(function () {
     $(".menu-mobile").on("click", function (e) {
         $(".mobile__menu--wrapper").toggleClass("active");
     });
+
+    $("#goToEvent").click(function() {
+        $("html, body")
+            .stop()
+            .animate(
+            {
+                scrollTop: $("#menu3").offset().top,
+            },
+            500,
+            function () {
+                location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            }
+        );
+    });
 });
 
 var wow = new WOW({

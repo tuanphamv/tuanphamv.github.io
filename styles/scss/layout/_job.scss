@@ -5,6 +5,13 @@
     }
 }
 .fpt__job {
+    &--wrapper {
+        @media screen and (max-width: 767px) {
+            .row .col-xs-12 + .col-xs-12 {
+                margin-top: 30px;
+            }
+        }
+    }
     &--item {
         position: relative;
         z-index: 1;
