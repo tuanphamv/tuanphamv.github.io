@@ -132,6 +132,12 @@ $(document).ready(function () {
                     $(".navigation .navigation__link[dataScroll='menu1']").addClass("active"); 
                 }
             });
+
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(".navigation .navigation__link.active").removeClass("active");
+                $(".navigation .navigation__link[dataScroll='menu6']").addClass("active");
+            }
+
             normalNav();
         })
         .scroll();
