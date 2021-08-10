@@ -51,7 +51,7 @@
     &--content {
         transform: translateY(100%);
         padding: 2.4rem 1rem 2.5rem 2.5rem;
-        @include position-absolute($bottom: 75px, $left: 0);
+        @include position-absolute($bottom: 85px, $left: 0);
         @include transition();
         a {
             color: $white;
