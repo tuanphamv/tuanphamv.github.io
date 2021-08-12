@@ -389,9 +389,12 @@
             var swiperMain = new Swiper(".fpt-swiper", {
                 spaceBetween: 0,
                 navigation: {},
-                // autoplay: {
-                // 	delay: 5000,
-                // },
+                autoplay: {
+                	delay: 5000,
+                },
+                mousewheel: {
+                    releaseOnEdges: true,
+                },
                 thumbs: {
                     swiper: swiperThumbs,
                 },
