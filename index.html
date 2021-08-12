@@ -1,720 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/scss/library/bootstrap-3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/library/awesome-5/all.css" />
-    <link rel="stylesheet" href="styles/scss/library/slick/slick.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/animate.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>FPT Landing Page</title>
-</head>
-<body>
-    <header class="fpt-header" id="menu1">
-        <section id="section-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-3">
-                        <div class="fpt-logo">
-                            <a href="#"><img src="image/logo-fpt.png" alt="logo"></a>
-                        </div>
-                    </div>
-                    <span class="menu-mobile">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </span>
-                    <div class="col-12 col-sm-9 mobile__menu--wrapper">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <nav class="navigation" id="mainNav">
-                                <ul>
-                                    <li class="navigation__link" dataScroll="menu3">
-                                        <a>Cascade of events</a>
-                                    </li>
-                                    <li class="navigation__link" dataScroll="menu2">
-                                        <a>Our speaker</a>
-                                    </li>
-                                    <li class="navigation__link" dataScroll="menu4">
-                                        <a>Why choose FPT Software</a>
-                                    </li>
-                                    <li class="navigation__link" dataScroll="menu5">
-                                        <a>Job Opening</a>
-                                    </li>
-                                    <li class="navigation__link" dataScroll="menu1">
-                                        <a>Register</a>
-                                    </li>
-                                    <li class="navigation__link" dataScroll="menu6">
-                                        <a>Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section hero-register">
-            <div class="container">
-                <div class="row d-flex align-items-center d-block-xs">
-                    <div class="col-xs-12 col-sm-6 col-md-7">
-                        <div class="block-left-content">
-                            <h1 class="block-title color-white header-banner-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s">The Way To Touch A Promised Land</h1>
-                            <a href="#" class="link-register wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">Register now <i class="icon-arrow-right"></i></a>
-                            <ul class="list-item-ul mt-40 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
-                                <li class="d-flex"><i class="icon-checkbox"></i><span>To join an interesting cascade of events</span></li>
-                                <li class="d-flex"><i class="icon-checkbox"></i><span>Chance to get signing bonus up to <strong>60.000.000 VND</strong> for Data Engineer, Data Analyst and Data Architect</span></li>
-                                <li class="d-flex"><i class="icon-checkbox"></i><span>Get job - No probation</span></li>
-                            </ul>
-                            <a id="goToEvent" class="btn btn-icon-left mt-50 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s"><i class="icon-btn mr-8"></i>Why you can't miss this chance?</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-5">
-                        <div class="register-wrapper wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
-                            <h3 class="title">Registration</h3>
-                            <form action="register-confirm.html" class="mt-20 form__wrapper">
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1" class="form-label">Name<span class="text-error">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput2" class="form-label">Email<span class="text-error">*</span></label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Your email">
-                                </div>
-                                <div class="row gutter-12">
-                                    <div class="col-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput3" class="form-label">Phone number<span class="text-error">*</span></label>
-                                            <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="Your phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput4" class="form-label">Years of experience<span class="text-error">*</span></label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="--">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1" class="form-label">Job title<span class="text-error">*</span></label>
-                                    <select class="fpt-select">
-                                        <option value="">- Choose a job -</option>
-                                        <option value="">Data Analyst</option>
-                                        <option value="">Data Architect</option>
-                                        <option value="">Data Engineer</option>
-                                        <option value="">Data Scientist</option>
-                                        <option value="">AI Scientist</option>
-                                        <option value="">Developer</option>
-                                        <option value="">Other</option>
-                                    </select>
-                                    <!-- <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                          - Chọn vị trí ứng tuyển -
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                      </div> -->
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1" class="form-label">Insert CV</label>
-                                    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="Attachments">
-                                </div>
-                                <div class="row gutter-12">
-                                    <div class="col-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput3" class="form-label">English level<span class="text-error">*</span></label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Your english level">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput4" class="form-label">Company</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Your company">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1" class="form-label">Do you have any question for our speakers?</label>
-                                    <textarea class="fpt-textarea" placeholder="Write down here"></textarea>
-                                </div>
-                                <button class="btn btn-larger btn-success btn-full">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <section class="page-section section-padding section-bg fpt-speaker" id="menu2">
-        <div class="container">
-            <h2 class="block-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">Speaker</h2>
-            <div class="slider-type-1 mt-60" id="slider1">
-                <div class="slider-item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-1.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Truong Gia Binh</h5>
-                            <a href="#" class="slider-link color-primary">Chairman of FPT</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-3.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Yoshua Bengio</h5>
-                            <a href="#" class="slider-link color-primary">Founder and Scientific Director of Mila <br> Scientific Director of IVADO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-2.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Frank BigNone</h5>
-                            <a href="#" class="slider-link color-primary">Former Airbus's Vice president and Head of Digital Transformation in APAC</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.8s">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-5.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Sam Crawshay Jones</h5>
-                            <a href="#" class="slider-link color-primary">Digital Transformation Centre of Excellence Leader</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-4.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Marc Fontaine </h5>
-                            <a href="#" class="slider-link color-primary">Former Digital Transformation Officer of Airbus <br> Founder and CEO of Industrial Data Hub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-8.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Nguyen Xuan Phong</h5>
-                            <a href="#" class="slider-link color-primary">CAIO at FPT Software</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-7.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Mr. Nguyen Duy Khuong</h5>
-                            <a href="#" class="slider-link color-primary">Former Data Scientist at Rakuten</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="fpt__item--slider">
-                        <div class="fpt-slider-image">
-                            <img src="image/slider-item-6.png" alt="image 1">
-                        </div>
-                        <div class="fpt-slider-content">
-                            <h5 class="slider-title">Ms. Ha Dinh</h5>
-                            <a href="#" class="slider-link color-primary">Data Scientist at Spotify</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="scripts/library/bootstrap/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="scripts/library/awesome-5/all.css" />
+        <link
+            rel="stylesheet"
+            href="scripts/library/swiper/swiper-bundle.min.css"
+        />
 
-    <section class="page-section section-padding section-bg fpt-event" id="menu3">
-        <div class="container">
-            <h2 class="block-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s">A Precious Cascade of Events</h2>
-            <h5 class="block-des mt-30 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s">Learn the tremedous <span class="color-primary">value of experience and skill set</span> from our world-class speakers</h5>
-            <div class="swiper-container fpt__event--slider mt-60" id="slider2">
+        <link rel="stylesheet" href="styles/animate.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+
+        <title>FPT-An Cư Lạc Nghiệp</title>
+    </head>
+    <body>
+        <div class="fpt-container">
+            <header class="header">
+                <div class="header-left">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="menu-content">
+                        <div class="content">
+                            <button class="btn btn-icon closebtn">
+                                &times;
+                            </button>
+                            <div class="center-contet">
+                                <button
+                                    class="btn btn-orange"
+                                    data-toggle="modal"
+                                    data-target="#registerModal"
+                                >
+                                    Đăng kí
+                                </button>
+                                <p class="slide-index">00.An Cư Lạc Nghiệp</p>
+                                <p class="slide-index">01.Đối tượng</p>
+                                <p class="slide-index">02. Quyền lợi</p>
+                                <p class="slide-index">03. Mục tiêu vay</p>
+                                <p class="slide-index">04. Ngân hàng áp dụng</p>
+                                <p class="slide-index">05. Thời gian</p>
+                                <p class="slide-index">06. Lắng nghe</p>
+                                <p class="slide-index">07. Ra quyết định</p>
+
+                                <hr />
+                                <div class="hotline">
+                                    <p class="title">Hotline</p>
+                                    <p>086.711.2399</p>
+                                    <p>091.752.9006</p>
+                                    <p>089.918.6788</p>
+                                </div>
+                            </div>
+                            <img
+                                class="logo-end"
+                                src="image/fpt_logo.png"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <span>Trang chủ</span>
+                </div>
+                <div class="header-right">
+                    <span
+                        class="text-register"
+                        data-toggle="modal"
+                        data-target="#registerModal"
+                        >Đăng kí</span
+                    >
+                    <img class="icon-arrow" src="image/focus-icon.png" alt="" />
+                    <span class="text-focus">Bạn muốn tư vấn?</span>
+                </div>
+                <div class="logo">
+                    <img
+                        class="logo"
+                        src="image/fpt_logo-white.png"
+                        alt="logo"
+                    />
+                </div>
+            </header>
+            <div class="swiper-container fpt-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide fpt__event--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
-                        <div class="fpt__event--top">
-                            <div class="fpt__event--icon">
-                                <i class="icon-setting"></i>
-                            </div>
-                            <h3 class="color-primary">Mining The Value Of Data</h3>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-orange">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
                         </div>
-                        <div class="fpt__event--content">
-                            <div class="d-flex fpt__event--content-item">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-time"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Time:</p>
-                                    <p class="fs-14 font-normal color-white-2">26-Jul-2021</p>
-                                </div>
-                            </div>
-                            <div class="d-flex fpt__event--content-item flex-1">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-book"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Speaker:</p>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr. Nguyen Duy Khuong</p>
-                                        <p class="fs-14 font-normal color-white-2">Data Scientist at Rakuten</p>
-                                    </div>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Ms. Ha Dinh</p>
-                                        <p class="fs-14 font-normal color-white-2">Data Scientist at Spotify</p>
-                                    </div>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr. Nguyen Xuan Phong</p>
-                                        <p class="fs-14 font-normal color-white-2">CAIO at FPT Software</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn-outline mt-28">Register Now</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide fpt__event--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">
-                        <div class="fpt__event--top">
-                            <div class="fpt__event--icon">
-                                <i class="icon-ai"></i>
-                            </div>
-                            <h3 class="color-primary">AI of Future And Past</h3>
-                        </div>
-                        <div class="fpt__event--content">
-                            <div class="d-flex fpt__event--content-item">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-time"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Time:</p>
-                                    <p class="fs-14 font-normal color-white-2">19-Aug-2021</p>
-                                </div>
-                            </div>
-                            <div class="d-flex fpt__event--content-item flex-1">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-book"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Speaker:</p>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr. Yoshua Bengio</p>
-                                        <p class="fs-14 font-normal color-white-2">Founder and Scientific Director of Mila Scientific Director of IVADO</p>
-                                    </div>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr. Truong Gia Binh</p>
-                                        <p class="fs-14 font-normal color-white-2">Chairman of FPT</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn-outline mt-28">Register Now</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide fpt__event--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.8s">
-                        <div class="fpt__event--top">
-                            <div class="fpt__event--icon">
-                                <i class="icon-computer-lock"></i>
-                            </div>
-                            <h3 class="color-primary">The Role of Data in Digital Transformation</h3>
-                        </div>
-                        <div class="fpt__event--content">
-                            <div class="d-flex fpt__event--content-item">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-time"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Time:</p>
-                                    <p class="fs-14 font-normal color-white-2">25-Aug-2021</p>
-                                </div>
-                            </div>
-                            <div class="d-flex fpt__event--content-item flex-1">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-book"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Speaker:</p>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr Frank BigNone</p>
-                                        <p class="fs-14 font-normal color-white-2">Former Airbus's Vice president and Head of Digital Transformation in APAC</p>
-                                    </div>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Mr. Sam Crawshay Jones</p>
-                                        <p class="fs-14 font-normal color-white-2">Digital Transformation Centre of Excellence Leader</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn-outline mt-28">Register Now</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide fpt__event--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.8s">
-                        <div class="fpt__event--top">
-                            <div class="fpt__event--icon">
-                                <i class="icon-profit"></i>
-                            </div>
-                            <h3 class="color-primary">How Is Big Data Tranforming Business?</h3>
-                        </div>
-                        <div class="fpt__event--content">
-                            <div class="d-flex fpt__event--content-item">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-time"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Time:</p>
-                                    <p class="fs-14 font-normal color-white-2">Updating</p>
-                                </div>
-                            </div>
-                            <div class="d-flex fpt__event--content-item flex-1">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-book"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Speaker:</p>
-                                    <div class="speaker__item"> 
-                                        <p class="font-bold">Mr. Marc Fontaine</p>
-                                        <p class="fs-14 font-normal color-white-2">Former Digital Transformation Officer of Airbus
-                                            Founder and CEO of Industrial Data Hub</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn-outline mt-28">Register Now</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide fpt__event--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.8s">
-                        <div class="fpt__event--top">
-                            <div class="fpt__event--icon">
-                                <i class="icon-trend"></i>
-                            </div>
-                            <h3 class="color-primary">Technology Trends: Powering The New Normal</h3>
-                        </div>
-                        <div class="fpt__event--content">
-                            <div class="d-flex fpt__event--content-item">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-time"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Co-host:</p>
-                                    <p class="fs-14 font-normal color-white-2">VietAI</p>
-                                </div>
-                            </div>
-                            <div class="d-flex fpt__event--content-item flex-1">
-                                <div class="fpt__event--content-left">
-                                    <i class="fpt-icon icon-book"></i>
-                                </div>
-                                <div class="fpt__event--content-right">
-                                    <p class="color-yellow font-bold">Speaker:</p>
-                                    <div class="speaker__item">
-                                        <p class="font-bold">Updating</p>
-                                        <p class="fs-14 font-normal color-white-2"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn-outline mt-28">Register Now</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="d-flex slider-footer mt-60">
-                    <div class="slider-arrow-control swiper-button-prev"></div>
-                    <div class="slider-arrow-control swiper-pagination"></div>
-                    <div class="slider-arrow-control swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="page-section section-padding section-bg fpt-work" id="menu4">
-        <div class="banner-top"></div>
-        <div class="container">
-            <h2 class="block-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">Why You Should Walk On The Golden Bridge Of New Opportunities With FPT Software</h2>
-            <h5 class="block-des mt-30 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">If you are fascinated with <span class="color-primary">Data & Artificial Intelligence,</span> you can collaborate with the best data talents who are working in <span class="color-primary">Mila and FPT Software</span></h5>
-            <div class="fpt-list-gallery mt-60">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8">
-                        <div class="fpt__gallery--item gradient-type-1 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">
-                            <div class="fpt__gallery--image">
-                                <img class="hidden-xs" src="image/gallery-item-1.png" alt="image 1">
-                                <img class="visiable-xs" src="image/gallery-item-1-mobile.png" alt="image 1">
-                            </div>
-                            <div class="fpt__gallery--content">
-                                <h3 class="font-semi-bold"><a href="#">Global Network</a></h3>
-                                <div class="fpt__gallery--des">
-                                    FPT is the first company in Southeast Asia to enter the Mila partner network, joining industry giants such as Google, Microsoft, and Facebook, etc. The partnership with Mila is to help FPT Software deliver many more real-world AI applications such as those in natural language processing, smart factory, healthcare, agriculture, and so on. It will also help realise FPT Software's aspiration to build a world-class AI & DATA center.
-                                </div>
-                            </div>
+                        <div class="content-right right-1">
+                            <img src="image/right-1.png" alt="" />
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="fpt__gallery--item gradient-type-2 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
-                            <div class="fpt__gallery--image">
-                                <img src="image/gallery-item-2.png" alt="image 1">
-                            </div>
-                            <div class="fpt__gallery--content">
-                                <h3 class="font-semi-bold"><a href="#">Working Environment</a></h3>
-                                <div class="fpt__gallery--des fs-14">
-                                    It is no secret that FPT Software deeply cares about talents, is known for modern and environmental-friendly office buildings and campuses across Vietnam and other countries. Employees are also entitled to mental well-being programs and endless work perks.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-30">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="fpt__gallery--item gradient-type-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
-                            <div class="fpt__gallery--image">
-                                <img src="image/gallery-item-3.png" alt="image 1">
-                            </div>
-                            <div class="fpt__gallery--content">
-                                <h3 class="font-semi-bold"><a href="#">Career Path</a></h3>
-                                <div class="fpt__gallery--des">
-                                    FPT Software helps you to know how to set smarter goals to maximize achievements. At FPT Software, you have unlimited opportunities to expand your path
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="fpt__gallery--item gradient-type-4 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.5s">
-                            <div class="fpt__gallery--image">
-                                <img src="image/gallery-item-4.png" alt="image 1">
-                            </div>
-                            <div class="fpt__gallery--content">
-                                <h3 class="font-semi-bold"><a href="#">Training Course</a></h3>
-                                <div class="fpt__gallery--des">
-                                    We will financially sponsor our members to participate in Upskilling program on the world's leading online training platform – Udacity. This platform offers in-depth online courses and micro-certificate programs (Nanodegree). Particularly, Udacity has a global mentor community of real experts with rich and diverse practical experience, helping students to best apply their acquired knowledge to projects in various fields.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="fpt__gallery--item gradient-type-5 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.5s">
-                            <div class="fpt__gallery--image">
-                                <img src="image/gallery-item-5.png" alt="image 1">
-                            </div>
-                            <div class="fpt__gallery--content">
-                                <h3 class="font-semi-bold"><a href="#">Signing bonus up to 60.000.000 VND</a></h3>
-                                <div class="fpt__gallery--des">
-                                    Chance to get signing bonus up to 60.000.000 VND for Data Engineer and Data Architect
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center mt-60">
-                    <a href="#" class="btn btn-success btn-width-370 font-bold fs-20">Register Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="page-section section-padding section-bg fpt-speaker" id="menu2"></section>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-green">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
 
-    <section class="page-section section-padding section-bg fpt-job" id="menu5">
-        <div class="container">
-            <h2 class="block-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">Job Opening</h2>
-            <div class="fpt__job--wrapper mt-60">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
-                            <div class="fpt__job--title">
-                                <h4>Data Analyst <span class="color-primary">(Signing bonus up to 60.000.000)</span></h4>
-                            </div>
-                            <div class="fpt__job--content">
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Location:</p>
-                                    <p>HN, HCM, DN</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Salary:</p>
-                                    <p>Up to 4000$</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Deadline:</p>
-                                    <p>30/11/2021</p>
-                                </div>
-                                <div class="d-flex justify-content-end mt-15">
-                                    <a href="#" class="btn-outline btn-outline-width-242">Register Now</a>
-                                </div>
-                            </div>
+                        <div class="content-right right-2">
+                            <img src="image/right-2.png" alt="" />
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
-                            <div class="fpt__job--title">
-                                <h4>Data Engineer <span class="color-primary">(Signing bonus up to 60.000.000)</span></h4>
-                            </div>
-                            <div class="fpt__job--content">
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Location:</p>
-                                    <p>HN, HCM, DN</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Salary:</p>
-                                    <p>Up to 4000$</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Deadline:</p>
-                                    <p>30/11/2021</p>
-                                </div>
-                                <div class="d-flex justify-content-end mt-15">
-                                    <a href="#" class="btn-outline btn-outline-width-242">Register Now</a>
-                                </div>
-                            </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-blue">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-3">
+                            <img src="image/right-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-orange">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-4">
+                            <img src="image/right-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-green">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-5">
+                            <img src="image/right-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-blue">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-6">
+                            <img src="image/right-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-green">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-7">
+                            <img src="image/right-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h1 class="slide-title text-gradient-orange">
+                                An Cư <br />
+                                Lạc Nghiệp
+                            </h1>
+                            <h5 class="sub-title">cùng FPT Software</h5>
+                        </div>
+
+                        <div class="content-right right-8">
+                            <img src="image/right-7.png" alt="" />
                         </div>
                     </div>
                 </div>
-                <div class="row mt-30">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.5s">
-                            <div class="fpt__job--title">
-                                <h4>Data Architect <span class="color-primary">(Signing bonus up to 60.000.000)</span></h4>
+            </div>
+            <div class="swiper-container fpt-swiper-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span>00. An Cư Lạc Nghiệp</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>01. Đối tượng</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>02. Quyền lợi</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>03. Mục đich vay</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>04. Ngân hàng áp dụng</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>05. Thời gian</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>06. Lắng nghe</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>07. Ra quyết định</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stepper-wrapper">
+                <span class="number current-slide">00</span>
+                <div class="stepper-item active">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter"></div>
+                </div>
+                <span class="number total-slide">07</span>
+            </div>
+
+            <div class="hotline hotline-fix animate__backInLeft">
+                <p class="title">Hotline</p>
+                <p>086.711.2399</p>
+                <p>091.752.9006</p>
+                <p>089.918.6788</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="registerModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Đăng ký nhận tư vấn
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Họ và tên</label>
+                            <input
+                                class="form-control"
+                                placeholder="Nhập tên đầy đủ của bạn"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input
+                                class="form-control"
+                                placeholder="Nhập địa chỉ email"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input
+                                class="form-control"
+                                placeholder="Số điện thoại di động"
+                            />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-7">
+                                <label>Vị trí ứng tuyển</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>
+                                        Chọn vị trí ứng tuyển
+                                    </option>
+                                    <option>Project Manager</option>
+                                    <option>Solution Achitect</option>
+                                    <option>Senior Tester/Business Analyst</option>
+                                    <option>Senior Developer</option>
+                                    <option>Data Engineer/Data Analyst</option>
+                                    <option>Quality Assurance</option>
+                                    <option>Khác</option>
+
+                                </select>
                             </div>
-                            <div class="fpt__job--content">
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Location:</p>
-                                    <p>HN, HCM, DN</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Salary:</p>
-                                    <p>Up to 4000$</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Deadline:</p>
-                                    <p>30/11/2021</p>
-                                </div>
-                                <div class="d-flex justify-content-end mt-15">
-                                    <a href="#" class="btn-outline btn-outline-width-242">Register Now</a>
-                                </div>
+                            <div class="form-group col-md-5 text-right">
+                                <label>Số năm kinh nghiệm</label>
+                                <input
+                                    class="form-control text-right"
+                                    placeholder="03"
+                                />
                             </div>
+                        </div>
+
+                        <div class="form-group form-upload-file">
+                            <label for="file-upload" class="custom-file-upload">
+                                <img
+                                    class="icon-upload"
+                                    src="image/upload-icon.png"
+                                    alt=""
+                                />
+                                Tải File CV
+                            </label>
+                            <input id="file-upload" type="file" />
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">
-                            <div class="fpt__job--title">
-                                <h4>AI Scientist</h4>
-                            </div>
-                            <div class="fpt__job--content">
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Location:</p>
-                                    <p>HN, HCM, DN</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Salary:</p>
-                                    <p>Up to 4000$</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between fpt__job--content-item">
-                                    <p><span class="color-primary">+</span> Deadline:</p>
-                                    <p>30/11/2021</p>
-                                </div>
-                                <div class="d-flex justify-content-end mt-15">
-                                    <a href="#" class="btn-outline btn-outline-width-242">Register Now</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-orange btn-register"
+                        >
+                            Đăng kí
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="page-section fpt-footer" id="menu6">
-        <div class="container wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
-            <div class="footer__top">
-                <div class="d-flex justify-content-between">
-                    <div class="footer__logo">
-                        <img src="image/logo-fpt.png" alt="logo">
-                    </div>
-                    <div class="d-flex align-items-center footer__social--list">
-                        <span>Follow us:</span>
-                        <ul class="d-flex align-items-center ml-20">
-                            <li><a href="https://career.fpt-software.com"><img src="image/earth.png" alt="social"></a></li>
-                            <li><a href="https://m.facebook.com/FPTSoftware/"><img src="image/fb.png" alt="social"></a></li>
-                            <li><a href="https://vn.linkedin.com/company/fptsoftwarecareer"><img src="image/linkin.png" alt="social"></a></li>
-                            <li><a href="mailto:Recruitment@fsoft.com.vn"><img src="image/email.png" alt="social"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__center">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Headquarter</h6>
-                            <p class="mt-12">FPT Tower, Pham Van Bach Street, Cau Giay District, Hanoi, Vietnam.</p>
-                            <p>Tel: +84 (24) 3 768 9048</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Hanoi</h6>
-                            <p class="mt-12">F-Ville Building, Technology Village No.3 & 4, Software Area, Hoa Lac Hi-tech Park, Km29, Thanglong Freeway, Thach That District, Hanoi, Vietnam.</p>
-                            <p>Tel: +84 24 73 044 888</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Ho Chi Minh City</h6>
-                            <p class="mt-12">F-Town Building, Lot T2, D1 Street, Saigon Hi-Tech Park, Tan Phu Ward, District 9, Ho Chi Minh City, Vietnam.</p>
-                            <p>Tel:+84 (28) 3 736 2323</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Da Nang</h6>
-                            <p class="mt-12">FPT Complex Building, Nam Ky Khoi Nghia Rd., Hoa Hai Ward, Ngu Hanh Son Dist., Danang, Vietnam.</p>
-                            <p>Tel: +84 (236) 3 958 555 / 84 (236) 3 958 777</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Can Tho</h6>
-                            <p class="mt-12">600 Nguyen Van Cu Street, An Binh Ward, Ninh Kieu District, Can Tho City.</p>
-                            <p>Tel: +84 (292) 390 79 79 / +84 (292) 390 79 80</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="footer__item--address">
-                            <h6 class="font-bold">FPT Software Quy Nhon</h6>
-                            <p class="mt-12">7th Floor, An Phu Thinh Plaza, 52A Tang Bat Ho Street, Le Loi Ward, Quy Nhon, Binh Dinh.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <section class="section-bg fpt-copyright">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-center fpt__copyright">
-                <p class="fs-14">Copyright © 2021 FPT Software.</p>
-            </div>
-        </div>
-    </section>
-    <script src="scripts/library/bootstrap/bootstrap.js"></script>
-    <script src="scripts/library/jquery-3.6.0.min.js"></script>
-    <script src="scripts/library/slick/slick.min.js"></script>
-    <script src="scripts/library/wow.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
+
+        <script src="scripts/library/jquery-3.2.1.slim.min.js"></script>
+        <script src="scripts/library/bootstrap/bootstrap.min.js"></script>
+        <script src="scripts/library/wow.min.js"></script>
+        <script src="scripts/library/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            $(".slide-index").click(function () {
+                swiperMain.slideTo($(this).index() - 1, 300, false);
+            });
+
+            $(".menu-button").on("click", function (e) {
+                $(".menu-content").width("340px");
+                $(".menu-content .slide-index, .menu-content .hotline").css(
+                    "color",
+                    "#000"
+                );
+            });
+
+            $(".closebtn").on("click", function (e) {
+                $(".menu-content .slide-index, .menu-content .hotline").css(
+                    "color",
+                    "transparent"
+                );
+                $(".menu-content").width("0");
+            });
+
+            var swiperThumbs = new Swiper(".fpt-swiper-thumbs", {
+                spaceBetween: 0,
+                slidesPerView: 7,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+
+            var swiperMain = new Swiper(".fpt-swiper", {
+                spaceBetween: 0,
+                navigation: {},
+                // autoplay: {
+                // 	delay: 5000,
+                // },
+                thumbs: {
+                    swiper: swiperThumbs,
+                },
+                on: {
+                    slideChange: function () {
+                        let index = swiperMain.realIndex;
+                        $(".current-slide").text("0" + index);
+                        $(".stepper-item").removeClass("active");
+                        $(".stepper-item").eq(index).addClass("active");
+                    },
+                },
+            });
+        </script>
+        <!-- <script src="scripts/main.js"></script> -->
+    </body>
 </html>

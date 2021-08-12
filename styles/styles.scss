@@ -5,20 +5,13 @@
 // ========================== Base =================================
 // @import '../font/stylesheet.css';
 @import 'scss/base/reset';
-@import 'scss/base/main';
 
 // ========================== Component ============================
 @import 'scss/components/icon';
 @import 'scss/components/form';
 @import 'scss/components/button';
-@import 'scss/components/tabs';
 
 // ========================== Layout ===============================
+@import 'scss/layout/home';
 @import 'scss/layout/header';
-@import 'scss/layout/register';
-@import 'scss/layout/speaker';
-@import 'scss/layout/event';
-@import 'scss/layout/work';
-@import 'scss/layout/job';
-@import 'scss/layout/footer';
-@import 'scss/layout/confirm';
+@import 'scss/layout/popup';

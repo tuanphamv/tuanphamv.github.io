@@ -1,12 +1,15 @@
 // =============== Color Main ====================
 $color-primary: #00AA5B;
 $color-secondary: #273748;
-$color-yellow: #FF8D00;
+$color-orange: #FF5E2C;
+$color-green: #FF5E2C;
+$color-blue: #FF5E2C;
 $color-text: #33436A;
 $color-text-2: #202244;
 $color-text-3: rgba(255, 255, 255, .8);
 $white: #ffffff;
-$placeholder: rgba(32, 34, 68, 0.5);
+$black: #000;
+$placeholder: #999a9b;
 $color-gray: #F2F5F4;
 $color-line: rgba(0, 170, 91, .1);
 $background: #08161B;
@@ -21,39 +24,41 @@ $font-h4: 2rem;
 $font-h5: 1.8rem;
 $font-h6: 1.6rem;
 $listFontsize: 12, 14, 20;
+$listSildes: 0, 1, 2, 3, 4, 5, 6, 7;
 @font-face {
-    font-family: 'SVN-Gilroy';
-    src: url('../font/SVN-Gilroy-Regular.otf');
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Inter';
+    src: url('../font/Inter-Regular.ttf');
 }
-  
+
 @font-face {
-    font-family: 'SVN-Gilroy';
-    src: url('../font/SVN-Gilroy-Bold.otf');
-    font-style: normal;
-    font-weight: 600;
-}
-  
-@font-face {
-    font-family: 'SVN-Gilroy';
-    src: url('../font/SVN-Gilroy-SemiBold.otf');
-    font-style: normal;
-    font-weight: 700;
-}
-  
-@font-face {
-    font-family: 'SVN-Gilroy';
-    src: url('../font/SVN-Gilroy-Medium.otf');
-    font-style: normal;
+    font-family: 'Inter';
+    src: url('../font/Inter-Medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'SVN-Gilroy';
-    src: url('../font/SVN-Gilroy\ XBold.otf');
-    font-style: normal;
-    font-weight: 800;
+    font-family: 'Inter';
+    src: url('../font/Inter-SemiBold.ttf');
+    font-weight: 600;
 }
+  
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Black.ttf');
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: 'Saira';
+    src: url('../font/Saira-Regular.ttf');
+}
+  
 // ================= Margin =======================
 $listMargin: 8, 12, 15, 20, 28, 30, 40, 50, 60;

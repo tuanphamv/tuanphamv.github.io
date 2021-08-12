@@ -5,26 +5,50 @@
     @include gutter(30);
 }
 
-select,
 .form-control {
-    font-size: 1.4rem;
+    min-height: 32px;
+    font-size: 1.6rem;
     line-height: 2rem;
-    padding: 0.6rem 0.8rem;
-    border-color: rgba(32, 34, 68, 0.12);
-    color: $color-text-2;
-    @include border-radius(4px);
+    padding: 0.4rem 0.8rem;
+    border-width: 0 0 2px 0;
+    border-color: #e1e4e6;
+    color: $black;
     @include placeholder {
         color: $placeholder;
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: darken(#e1e4e6, 10%);
+        box-shadow: none;
     }
 }
 
 .form-group {
     margin-bottom: 1.6rem;
     label {
-        color: $white;
+        color: #292d32;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
         line-height: 1.6rem;
-        margin-bottom: 0.6rem;
+        margin: 0 0 6px 8px;
     }
+}
+
+select {
+    display: block;
+    width: 100%;
+    min-height: 32px;
+    color: $black;
+    padding: 0 3rem 0 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../image/down-icon.png");
+    background-size: 16px 8px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 12px;
 }
 
 .fpt-textarea {
@@ -43,20 +67,34 @@ select,
     width: 100%;
     min-height: 32px;
     color: $placeholder;
-    padding: 0 3rem 0 0.8rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url('../image/chevron-down.png');
-    background-repeat: no-repeat;
-    background-position-x: 98%;
-    background-position-y: 3px;
+    padding: 0 0.5rem;
 }
 
 .form-upload-file {
-    position: relative;
-    span {
-        background: url("../image/icon-upload.png") no-repeat center;
-        @extend %d-inline-flex;
-        @include box(20px);
+    margin-top: 12px;
+    margin-bottom: 25px;
+
+    input[type="file"] {
+        display: none;
+    }
+    .custom-file-upload {
+        width: 100%;
+        margin: 0;
+        border: 2px dashed #c4c4c4;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 45px;
+        padding: 12px;
+        cursor: pointer;
+        margin: 0;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        .icon-upload {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
     }
 }
