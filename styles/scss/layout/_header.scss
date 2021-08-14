@@ -95,21 +95,29 @@
                 align-self: center;
             }
         }
+
+        .home-page {
+            cursor: pointer;
+        }
     }
 
     .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        img {
+        .animate {
             width: 63px;
             height: 55px;
+            transition: all 1s ease;
+            &.move {
+                transform: scale(1.2, 1.2);
+            }
         }
     }
 
     &-right {
         position: relative;
-        .text-register {
+        .btn-register {
             font-size: 14px;
             font-weight: 700;
             cursor: pointer;

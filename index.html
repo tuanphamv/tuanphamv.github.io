@@ -67,13 +67,11 @@
                             />
                         </div>
                     </div>
-                    <span>Trang chủ</span>
+                    <span class="home-page">Trang chủ</span>
                 </div>
                 <div class="header-right">
                     <span
-                        class="text-register"
-                        data-toggle="modal"
-                        data-target="#registerModal"
+                        class="btn-register"
                         >Đăng kí</span
                     >
                     <img class="icon-arrow" src="image/focus-icon.png" alt="" />
@@ -86,7 +84,7 @@
                 </div>
                 <div class="logo">
                     <img
-                        class="logo"
+                        class="animate" id="logoFPT"
                         src="image/fpt_logo-white.png"
                         alt="logo"
                     />
@@ -116,20 +114,20 @@
                         <img class="animate center" src="image/center-4.png" alt="">
                         <img class="animate right" src="image/right-4.svg" alt="" />
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-5">
                         <img class="animate left" src="image/left-5.svg" alt="">
                         <img class="animate right" src="image/right-5.svg" alt="" />
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-6">
                         <img class="animate left" src="image/left-6.svg" alt="">
                         <img class="animate right" src="image/right-6.svg" alt="" />
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-7">
                         <img class="animate left" src="image/left-7.svg" alt="">
                         <img class="animate center" src="image/center-7.png" alt="">
                         <img class="animate right" src="image/right-7.svg" alt="" />
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-8">
                         
                     </div>
                 </div>
@@ -297,6 +295,15 @@
         <script src="scripts/library/swiper/swiper-bundle.min.js"></script>
 
         <script>
+
+            $(".home-page").click(function () {
+                swiperMain.slideTo(0, 300, false);
+            });
+
+            $(".btn-register").click(function () {
+                swiperMain.slideTo(7, 300, false);
+            });
+
             $(".slide-index").click(function () {
                 swiperMain.slideTo($(this).index() - 1, 300, false);
             });
@@ -338,9 +345,15 @@
                     swiper: swiperThumbs,
                 },
                 on: {
+                    init: function(swiper) {
+                        $(".fpt-swiper .swiper-slide:nth-child(1) .animate").addClass("move");
+                        $("#logoFPT").addClass("move");
+                    },
                     slideChange: function () {
-                        $(".animate").toggleClass("move");
                         let index = swiperMain.realIndex;
+                        $("#logoFPT").toggleClass("move");
+                        $(".fpt-swiper .swiper-slide .animate").removeClass("move");
+                        $(".fpt-swiper .swiper-slide:eq("+(index)+") .animate").addClass("move");
                         $(".current-slide").text("0" + index);
                         $(".stepper-item").removeClass("active");
                         $(".stepper-item").eq(index).addClass("active");

@@ -89,10 +89,12 @@
 
                 &.slide-1 {
                     .left {
+                        margin-bottom: -60px;
+                        margin-left: 20px;
                         transition: all 0.5s ease;
 
                         &.move {
-                            transform: translate(-5%, 30%);
+                            transform: translate(20px, -60px);
                         }
                     }
 
@@ -104,12 +106,35 @@
 
                     .right {
                         width: 300px;
-                        margin-right: 115px;
-                        margin-bottom: 110px;
+                        margin-right: 75px;
+                        margin-bottom: 220px;
                         transition: all 1s ease;
 
                         &.move {
-                            transform: translate(20%, -20%);
+                            transform: translate(-55px, 80px);
+                        }
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-bottom: -80px;
+                            margin-left: 50px;
+                            &.move {
+                                transform: translate(48px, -60px);
+                            }
+                        }
+                        .center {
+                            width: 860px;
+                            left: 48%;
+                        }
+
+                        .right {
+                            width: 400px;
+                            margin-right: 90px;
+                            margin-bottom: 220px;
+                            &.move {
+                                transform: translate(-90px, 90px);
+                            }
                         }
                     }
                 }
@@ -135,15 +160,34 @@
                             transform: translate(15%, -36%);
                         }
                     }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-bottom: 140px;
+                            margin-left: 180px;
+                            &.move {
+                                transform: translate(-12%, 20%);
+                            }
+                        }
+
+                        .right {
+                            width: 300px;
+                            margin-top: 60px;
+                            margin-right: 270px;
+                            &.move {
+                                transform: translate(40px, -80px);
+                            }
+                        }
+                    }
                 }
 
                 &.slide-3 {
                     .left {
-                        margin-bottom: 100px;
+                        margin-bottom: 200px;
                         transition: all 0.5s ease;
 
                         &.move {
-                            transform: translate(0%, -25%);
+                            transform: translate(0%, 50px);
                         }
                     }
 
@@ -156,11 +200,168 @@
                     .right {
                         width: 300px;
                         margin-right: 130px;
-                        margin-bottom: 150px;
+                        margin-bottom: -40px;
+                        transition: all 1s ease;
+
+                        &.move {
+                            transform: translate(0, -80px);
+                        }
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 100px;
+                        }
+
+                        .center {
+                            width: 750px;
+                            left: 48%;
+                        }
+
+                        .right {
+                            width: 400px;
+                            margin-right: 180px;
+                            margin-bottom: 80px;
+                            &.move {
+                                transform: translate(0, -40px);
+                            }
+                        }
+                    }
+                }
+
+                &.slide-4 {
+                    .left {
+                        margin-bottom: -30px;
+                        transition: all 0.5s ease;
+
+                        &.move {
+                            transform: translate(0%, -40%);
+                        }
+                    }
+
+                    .center {
+                        width: 480px;
+                        position: absolute;
+                        left: 50%;
+                    }
+
+                    .right {
+                        width: 300px;
+                        margin-right: 75px;
+                        margin-bottom: 210px;
                         transition: all 1s ease;
 
                         &.move {
                             transform: translate(0%, 60%);
+                        }
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 100px;
+                        }
+
+                        .center {
+                            width: 600px;
+                        }
+
+                        .right {
+                            width: 450px;
+                            margin-right: 150px;
+                            margin-bottom: 290px;
+                            &.move {
+                                transform: translate(0, 60px);
+                            }
+                        }
+                    }
+                }
+
+                &.slide-5 {
+                    .left {
+                        margin-bottom: 40px;
+                        transition: all 0.5s ease;
+
+                        &.move {
+                            transform: translate(0%, -20%);
+                        }
+                    }
+
+                    .center {
+                        width: 480px;
+                        position: absolute;
+                        left: 50%;
+                    }
+
+                    .right {
+                        width: 300px;
+                        margin-right: 140px;
+                        margin-bottom: 200px;
+                        transition: all 1s ease;
+
+                        &.move {
+                            transform: translate(0, 45px);
+                        }
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 100px;
+                        }
+
+                        .center {
+                            width: 600px;
+                        }
+
+                        .right {
+                            width: 360px;
+                            margin-right: 180px;
+                            margin-bottom: 200px;
+                            &.move {
+                                transform: translate(0, 45px);
+                            }
+                        }
+                    }
+                }
+
+                &.slide-6 {
+                    .right {
+                        margin-right: 110px;
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 100px;
+                        }
+
+                        .right {
+                            margin-right: 140px;
+                            width: 400px;
+                        }
+                    }
+                }
+
+                &.slide-7 {
+                    .center {
+                        width: 480px;
+                        position: absolute;
+                        left: 50%;
+                    }
+
+                    .right {
+                        width: 340px;
+                        margin-right: 123px;
+                        margin-bottom: 40px;
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 100px;
+                        }
+
+                        .right {
+                            width: 450px;
+                            margin-right: 160px;
+                            margin-bottom: 80px;
                         }
                     }
                 }
