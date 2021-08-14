@@ -365,6 +365,26 @@
                         }
                     }
                 }
+
+                &.slide-8 {
+                    .right {
+                        width: 300px;
+                        margin-right: 110px;
+                        margin-bottom: 40px;
+                    }
+
+                    @media screen and (min-width: 1600px) {
+                        .left {
+                            margin-left: 150px;
+                        }
+
+                        .right {
+                            width: 400px;
+                            margin-right: 160px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
             }
         }
     }
