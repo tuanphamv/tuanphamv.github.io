@@ -288,13 +288,16 @@
 
             $(".btn-register").click(function () {
                 swiperMain.slideTo(7, 300, false);
+                $(".menu-content").width("0");
             });
 
             $(".slide-index").click(function () {
+                $(".menu-content").width("0");
                 swiperMain.slideTo($(this).index() - 1, 300, false);
             });
 
             $(".menu-button").on("click", function (e) {
+                event.stopPropagation();
                 $(".menu-content").width("340px");
                 $(".menu-content .slide-index, .menu-content .hotline").css(
                     "color",
@@ -308,6 +311,14 @@
                     "transparent"
                 );
                 $(".menu-content").width("0");
+            });
+
+            $(window).click(function() {
+                $(".menu-content").width("0");
+            });
+
+            $('.menu-content').click(function(event){
+                event.stopPropagation();
             });
 
             var swiperThumbs = new Swiper(".fpt-swiper-thumbs", {
