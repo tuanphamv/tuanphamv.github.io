@@ -33,6 +33,7 @@
                     background-size: cover;
                 }
 
+                &:nth-child(5),
                 &:nth-child(7) {
                     background: url(../image/bg-green.png) no-repeat center;
                     background-size: cover;
@@ -42,10 +43,6 @@
                     background: url(../image/bg-blue.png) no-repeat center;
                     background-size: cover;
                 }
-
-                // @media screen and (max-width: 1680px) {
-                //     background-size: contain !important;
-                // }
 
                 .text-gradient-orange {
                     background: -webkit-linear-gradient(#f35d09, #f3851e);
@@ -117,10 +114,10 @@
 
                     @media screen and (min-width: 1600px) {
                         .left {
-                            margin-bottom: -80px;
-                            margin-left: 50px;
+                            margin-bottom: -75px;
+                            margin-left: 90px;
                             &.move {
-                                transform: translate(48px, -60px);
+                                transform: translate(48px, -50px);
                             }
                         }
                         .center {
@@ -163,8 +160,8 @@
 
                     @media screen and (min-width: 1600px) {
                         .left {
-                            margin-bottom: 140px;
-                            margin-left: 180px;
+                            margin-bottom: 178px;
+                            margin-left: 220px;
                             &.move {
                                 transform: translate(-12%, 20%);
                             }
@@ -194,7 +191,7 @@
                     .center {
                         width: 560px;
                         position: absolute;
-                        left: 50%;
+                        left: 53%;
                     }
 
                     .right {
@@ -210,18 +207,19 @@
 
                     @media screen and (min-width: 1600px) {
                         .left {
-                            margin-left: 100px;
+                            margin-left: 150px;
+                            margin-bottom: 170px;
                         }
 
                         .center {
                             width: 750px;
-                            left: 48%;
+                            left: 54%;
                         }
 
                         .right {
                             width: 400px;
                             margin-right: 180px;
-                            margin-bottom: 80px;
+                            margin-bottom: 10px;
                             &.move {
                                 transform: translate(0, -40px);
                             }
@@ -240,7 +238,7 @@
                     }
 
                     .center {
-                        width: 480px;
+                        width: 440px;
                         position: absolute;
                         left: 50%;
                     }
@@ -267,10 +265,10 @@
 
                         .right {
                             width: 450px;
-                            margin-right: 150px;
-                            margin-bottom: 290px;
+                            margin-right: 85px;
+                            margin-bottom: 240px;
                             &.move {
-                                transform: translate(0, 60px);
+                                transform: translate(0, 90px);
                             }
                         }
                     }
@@ -287,7 +285,7 @@
                     }
 
                     .center {
-                        width: 480px;
+                        width: 430px;
                         position: absolute;
                         left: 50%;
                     }
@@ -305,7 +303,7 @@
 
                     @media screen and (min-width: 1600px) {
                         .left {
-                            margin-left: 100px;
+                            margin-left: 140px;
                         }
 
                         .center {
@@ -397,6 +395,11 @@
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(16px);
         width: 100%;
+
+        @media screen and (max-width: 1366px) {
+            height: 62px;
+        }
+
         .swiper-wrapper {
             position: relative;
             padding: 0 24px;
