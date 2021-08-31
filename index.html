@@ -55,7 +55,7 @@
                                             <a href="https://www.fpt-software.com/" target="_blank"><img src="image/web-icon.png" alt=""></a>
                                         </li>
                                         <li>
-                                            <a href="https://www.facebook.com/fptsoftware.official/" target="_blank"><img src="image/face-icon.png" alt=""></a>
+                                            <a href="https://www.facebook.com/109085624318788/posts/294416909118991/" target="_blank"><img src="image/face-icon.png" alt=""></a>
                                         </li>
                                         <li>
                                             <a href="https://www.linkedin.com/company/fpt-software/" target="_blank"><img src="image/linkin-icon.png" alt=""></a>
@@ -76,8 +76,10 @@
                     <span class="home-page">Trang chủ</span>
                 </div>
                 <div class="header-right">
+                    <img class="btn-register visable-xs" src="image/icon-register.svg" alt="" />
+
                     <span
-                        class="btn-register"
+                        class="btn-register hidden-xs"
                         >Đăng kí</span
                     >
                     <img class="icon-arrow" src="image/focus-icon.png" alt="" />
@@ -96,40 +98,42 @@
             <div class="swiper-container fpt-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
-                        <img class="animate left" src="image/left-1.svg" alt="">
+                        <img class="animate left hidden-xs" src="image/left-1.svg" alt="">
+                        <img class="top visable-xs" src="image/top-1.svg" alt="">
                         <img class="animate center" src="image/center-1.png" alt="">
-                        <img class="animate right" src="image/right-1.svg" alt="" />
+                        <img class="animate right hidden-xs" src="image/right-1.svg" alt="" />
+                        <img class="bottom visable-xs" src="image/bottom-1.svg" alt="">
                     </div>
 
                     <div class="swiper-slide slide-2">
-                        <img class="animate left" src="image/left-2.svg" alt="">
-                        <img class="animate right" src="image/right-2.svg" alt="" />
+                        <img class="animate left hidden-xs" src="image/left-2.svg" alt="">
+                        <img class="animate right hidden-xs" src="image/right-2.svg" alt="" />
                     </div>
 
                     <div class="swiper-slide slide-3">
-                        <img class="animate left" src="image/left-3.svg" alt="">
+                        <img class="animate left hidden-xs" src="image/left-3.svg" alt="">
                         <img class="animate center" src="image/center-3.png" alt="">
-                        <img class="animate right" src="image/right-3.svg" alt="" />
+                        <img class="animate right hidden-xs" src="image/right-3.svg" alt="" />
                     </div>
 
                     <div class="swiper-slide slide-4">
-                        <img class="animate left" src="image/left-4.svg" alt="">
+                        <img class="animate left hidden-xs" src="image/left-4.svg" alt="">
                         <img class="animate center" src="image/center-4.png" alt="">
-                        <img class="animate right" src="image/right-4.svg" alt="" />
+                        <img class="animate right hidden-xs" src="image/right-4.svg" alt="" />
                     </div>
                     <div class="swiper-slide slide-5">
-                        <img class="animate left" src="image/left-5.svg" alt="">
+                        <img class="animate left hidden-xs" src="image/left-5.svg" alt="">
                         <img class="animate center" src="image/center-5.png" alt="">
-                        <img class="animate right" src="image/right-5.svg" alt="" />
+                        <img class="animate right hidden-xs" src="image/right-5.svg" alt="" />
                     </div>
                     <div class="swiper-slide slide-6">
-                        <img class="animate left" src="image/left-6.svg" alt="">
-                        <img class="animate right" src="image/right-6.svg" alt="" />
+                        <img class="animate left hidden-xs" src="image/left-6.svg" alt="">
+                        <img class="animate right hidden-xs" src="image/right-6.svg" alt="" />
                     </div>
                     <div class="swiper-slide slide-7">
-                        <img class="animate left" src="image/left-7.svg" alt="">
+                        <img class="animate left hidden-xs" src="image/left-7.svg" alt="">
                         <img class="animate center" src="image/center-7.png" alt="">
-                        <img class="animate right" src="image/right-7.svg" alt="" />
+                        <img class="animate right hidden-xs" src="image/right-7.svg" alt="" />
                     </div>
                     <div class="swiper-slide slide-8">
                         <img class="animate left" src="image/left-8.svg" alt="">
@@ -252,6 +256,8 @@
                         <span>07. Ra quyết định</span>
                     </div>
                 </div>
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
             </div>
 
             <div class="stepper-wrapper">
@@ -354,9 +360,21 @@
                 freeMode: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                }
             });
 
             var swiperMain = new Swiper(".fpt-swiper", {
+                slidesPerView: 1,
                 spaceBetween: 0,
                 effect: "fade",
                 // autoplay: {

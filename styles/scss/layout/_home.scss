@@ -6,6 +6,24 @@
     @include flex;
     flex-direction: column;
 
+    .visable-xs{
+        display: none;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .hidden-xs {
+            display: none;
+        }
+        .visable-xs {
+            display: block;
+        }
+    }
+    
+
+    // .swiper-button {
+    //     display: none;
+    // }
+
     .fpt-swiper {
         flex: 1;
         min-height: 0;
