@@ -38,10 +38,52 @@
             padding: 0;
             text-align: center;
             @include flex;
-            .btn-register {
+            .btn-submit {
                 width: 100%;
                 margin: 0 40px;
                 height: 36px;
+            }
+        }
+
+        &.content-done {
+            padding: 40px 50px;
+            .form-body {
+                text-align: center;
+                .main-text {
+                    margin: 10px 0 20px;
+                    font-size: 14px;
+                    background: -webkit-linear-gradient(#4f565f, #292d32);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            .form-footer {
+                display: block;
+                margin-top: 25px;
+                .connect-text {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color-orange;
+                    margin-bottom: 10px;
+                }
+
+                .group-link {
+                    @include flex;
+                    justify-content: center;
+                    .btn-social {
+                        width: 120px;
+                        height: 36px;
+                        display: flex;
+                        align-items: center;
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+                        svg {
+                            margin-right: 10px;
+                        }
+                    }
+                }
             }
         }
     }
