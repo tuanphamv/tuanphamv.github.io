@@ -81,7 +81,7 @@
                             transform: translate(0, 0px);
                         }
                     }
-    
+
                     .animate {
                         &.center {
                             animation: float-mobile 3s ease-in-out infinite;
@@ -107,7 +107,6 @@
                                 width: 400px;
                             }
                         }
-                        
 
                         .bottom {
                             width: 300px;
@@ -257,10 +256,16 @@
                 padding: 0;
                 &::before {
                     left: 0;
+                    width: calc((100%*7));
                 }
 
                 .swiper-slide {
                     width: 100% !important;
+                    &.swiper-slide-thumb-active {
+                        &::before {
+                            content: none;
+                        }
+                    }
                     &.swiper-slide-active {
                         &::before {
                             content: "";
