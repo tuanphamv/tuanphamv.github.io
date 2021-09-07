@@ -407,6 +407,9 @@
                 opacity: 1;
                 top: 24px;
                 visibility: visible;
+                &.swiper-button-disabled {
+                    opacity: 0.5;
+                }
 
                 &::after {
                     color: #fff;
