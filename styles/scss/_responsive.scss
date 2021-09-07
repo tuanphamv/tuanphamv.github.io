@@ -325,7 +325,7 @@
 
                     &.slide-8 {
                         padding: 10px;
-                        .form-resiter {
+                        .form-register {
                             width: 100%;
                             top: 50%;
                             transform: translate(-50%, -50%);
@@ -348,6 +348,9 @@
                                 }
                                 .form-footer {
                                     margin-top: 20px;
+                                    .btn-link-register {
+                                        margin: 0;
+                                    }
                                 }
                             }
 
