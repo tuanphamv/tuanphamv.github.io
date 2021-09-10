@@ -166,8 +166,8 @@
                     }
 
                     .right {
-                        width: 270px;
-                        margin-top: 75px;
+                        width: 300px;
+                        margin-top: -70px;
                         margin-right: 160px;
                         transition: all 1s ease;
 
@@ -186,8 +186,8 @@
                         }
 
                         .right {
-                            width: 300px;
-                            margin-top: 60px;
+                            width: 330px;
+                            margin-top: -22px;
                             margin-right: 270px;
                             &.move {
                                 transform: translate(40px, -80px);
@@ -303,9 +303,9 @@
                     }
 
                     .center {
-                        width: 430px;
+                        width: 400px;
                         position: absolute;
-                        left: 50%;
+                        left: 49%;
                     }
 
                     .right {
@@ -359,7 +359,7 @@
 
                 &.slide-7 {
                     .center {
-                        width: 480px;
+                        width: 450px;
                         position: absolute;
                         left: 50%;
                     }
@@ -373,6 +373,10 @@
                     @media screen and (min-width: 1600px) {
                         .left {
                             margin-left: 100px;
+                        }
+
+                        .center {
+                            width: 550px;
                         }
 
                         .right {
