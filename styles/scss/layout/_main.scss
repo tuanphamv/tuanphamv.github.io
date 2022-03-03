@@ -451,6 +451,7 @@
     .main-list {
       align-items: unset;
       li {
+        padding: 15px 10px;
         font-size: 15px;
       }
     }
@@ -545,9 +546,16 @@
           padding: 16px;
           .box-people-talk {
             padding: 20px;
-            .quote .content {
-              font-size: 20px;
-              line-height: 30px;
+            .quote {
+              .icon {
+                top: -10px;
+                width: 20px;
+                height: 16px;
+              }
+              .content {
+                font-size: 20px;
+                line-height: 30px;
+              }
             }
           }
         }
@@ -560,5 +568,11 @@
       font-size: 36px;
       line-height: 40px;
     }
+  }
+
+  .btn-mobile {
+    padding: 18px 12px;
+    width: 100%;
+    font-size: 18px;
   }
 }
