@@ -1,19 +1,16 @@
 // =============== Color Main ====================
-$color-primary: #00AA5B;
+$color-primary: #4cb848;
 $color-secondary: #273748;
-$color-orange: #F35D09;
-$color-green: #0DB14B;
-$color-blue: #0066B3;
-$color-text: #33436A;
+$color-yellow: #f37121;
+$color-text: #33436a;
 $color-text-2: #202244;
-$color-text-3: rgba(255, 255, 255, .8);
+$color-text-3: rgba(255, 255, 255, 0.8);
 $white: #ffffff;
-$black: #000;
-$placeholder: #999a9b;
-$color-gray: #F2F5F4;
-$color-line: rgba(0, 170, 91, .1);
-$background: #08161B;
-$background-2: #0F1E23;
+$placeholder: rgba(32, 34, 68, 0.5);
+$color-gray: #f2f5f4;
+$color-line: rgba(0, 170, 91, 0.1);
+$background: #08161b;
+$background-2: #0f1e23;
 
 // =============== Font size =====================
 $font-size: 1.6rem;
@@ -24,41 +21,40 @@ $font-h4: 2rem;
 $font-h5: 1.8rem;
 $font-h6: 1.6rem;
 $listFontsize: 12, 14, 20;
-$listSildes: 2, 6, 8;
+
 @font-face {
-    font-family: 'Inter';
-    src: url('../font/Inter-Regular.ttf');
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('../font/Inter-Medium.ttf');
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Medium.ttf");
+    font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('../font/Inter-SemiBold.ttf');
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-SemiBold.ttf");
+    font-style: normal;
     font-weight: 600;
 }
-  
-@font-face {
-    font-family: 'Inter';
-    src: url('../font/Inter-Bold.ttf');
-    font-weight: 700;
-}
+
+// @font-face {
+//     font-family: "OpenSans";
+//     src: url("../font/OpenSans-Bold.ttf");
+//     font-style: normal;
+//     font-weight: 700;
+// }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('../font/Inter-Black.ttf');
-    font-weight: 900;
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Bold.ttf");
+    font-style: normal;
+    font-weight: 800;
 }
-
-
-@font-face {
-    font-family: 'Saira';
-    src: url('../font/Saira-Regular.ttf');
-}
-  
 // ================= Margin =======================
-$listMargin: 8, 12, 15, 20, 28, 30, 40, 50, 60;
+$listMargin: 8, 12, 15, 20, 28, 30, 40, 50, 60, 80, 100;

@@ -5,18 +5,66 @@
     @include gutter(30);
 }
 
+select,
+.form-control {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 0.6rem 0.8rem;
+    border-color: rgba(32, 34, 68, 0.12);
+    color: $color-text-2;
+    @include border-radius(4px);
+    @include placeholder {
+        color: $placeholder;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+    label {
+        color: $white;
+        line-height: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+.fpt-textarea {
+    min-height: 62px;
+    resize: none;
+    width: 100%;
+    padding: 1rem 0.8rem;
+    color: $color-text-2;
+    @include placeholder {
+        color: $placeholder;
+    }
+}
+
+select.form-control {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    // color: $placeholder;
+    padding: 0 3rem 0 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../image/chevron-down.png');
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    background-position-x: 98%;
+    background-position-y: 15px;
+}
+
 .form-control {
     min-height: 32px;
     font-size: 1.6rem;
     line-height: 2rem;
-    padding: 0.4rem 0.8rem;
-    border-width: 0 0 2px 0;
-    border-color: #e1e4e6;
-    color: $black;
-
+    padding: 10px 8px;
+    border: 1px solid #E9EEF0;
+    border-radius: 4px;
+    color: #13183e;
+    box-shadow: none;
     @media screen and (max-width: 1366px) {
         font-size: 14px;
-        min-height: 28px;
+        min-height: 40px;
     }
 
     @include placeholder {
@@ -46,55 +94,33 @@
     }
 }
 
-select {
-    display: block;
-    width: 100%;
-    min-height: 32px;
-    color: $black;
-    padding: 0 3rem 0 0.8rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("../image/down-icon.png");
-    background-size: 16px 8px;
-    background-repeat: no-repeat;
-    background-position-x: 98%;
-    background-position-y: 12px;
-}
-
-.fpt-textarea {
+textarea {
     min-height: 62px;
     resize: none;
     width: 100%;
     padding: 1rem 0.8rem;
     color: $color-text-2;
+    resize: none;
     @include placeholder {
         color: $placeholder;
     }
 }
 
-.fpt-select {
-    display: block;
-    width: 100%;
-    min-height: 32px;
-    color: $placeholder;
-    padding: 0 0.5rem;
-}
-
 .form-upload-file {
     margin-top: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     input[type="file"] {
         display: none;
     }
     .custom-file-upload {
-        width: 100%;
+        width: 125px;
         margin: 0;
-        border: 2px dashed #c4c4c4;
+        border: 1px solid $color-yellow;
         box-sizing: border-box;
         display: inline-block;
-        height: 45px;
-        padding: 12px;
+        height: 36px;
+        padding: 8px 12px;
         cursor: pointer;
         margin: 0;
         text-align: center;
@@ -105,6 +131,11 @@ select {
             height: 18px;
             margin-right: 10px;
             margin-bottom: 2px;
+        }
+
+        .name-file {
+            font-size: 14px;
+            margin-top: 6px;
         }
     }
 }

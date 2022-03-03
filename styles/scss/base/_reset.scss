@@ -1,17 +1,13 @@
 html {
     font-size: 10px;
     body {
-        position: relative;
         font-size: $font-size;
         line-height: 1.4;
-        color: $black;
-        font-family: "Inter";
-        height: 100vh;
-        background: -webkit-linear-gradient(#D5DEE2, #EEF4F6, #D6E0E2);
+        font-family: 'OpenSans';
+        font-weight: 500;
     }
 }
-ul,
-li {
+ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -27,13 +23,7 @@ a {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 

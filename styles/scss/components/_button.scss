@@ -9,7 +9,7 @@
 }
 .btn-larger {
     font-weight: 600;
-    padding: .9rem;
+    padding: 0.9rem;
     font-size: 2rem;
 }
 
@@ -21,9 +21,30 @@
     width: 370px;
 }
 
+.btn-yellow {
+    background-color: $color-yellow;
+    border-radius: 30px 0px;
+    padding: 18px 60px;
+    height: 68px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($color-yellow, 7.5);
+        color: #fff;
+    }
+}
+
 .btn-success {
     background-color: $color-primary;
     color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white;
+    }
 }
 
 .btn-icon-left {
@@ -33,47 +54,31 @@
     @extend %d-inline-flex;
     @extend %align-item-center;
     @include border-radius(4px);
+
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 1.2rem 1rem;
+    }
 }
 
 .btn-outline {
-    border: 1px solid $color-primary;
-    font-size: 1.8rem;
-    color: $white;
-    padding: .7rem 0;
+    border: 1px solid $color-yellow;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-yellow;
+    padding: 1.3rem 0;
     @include border-radius(4px);
     @extend %flex-center;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-yellow;
+        font-weight: bold;
+    }
 }
 
 .btn-outline-width-242 {
     width: 242px;
 }
-
-.btn {
-    &.btn-icon {
-        width: 40px;
-        height: 40px;
-        color: $black;
-        @include border-radius(4px);
-        @extend %flex-center;
-    
-        &:hover, &:active, &:focus {
-            outline: 0;
-            border: 0;
-            color: $black;
-            background-color: darken(#eceff0, 10%);
-        }
-    }
-
-    &.btn-orange {
-        background-color: #F35D09;
-        height: 34px;
-        font-size: 14px;
-        padding: 8px 12px;
-
-        &:hover, &:active, &:focus {
-            color: $white;
-            background-color: darken(#F35D09, 5%);
-        }
-    }
-}
-

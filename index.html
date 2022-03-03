@@ -1,526 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:type"               content="article" />
-        <!-- <meta property="og:title"              content="" /> -->
-        <!-- <meta property="og:description"        content="" /> -->
-        <meta property="og:image"              content="image/ITViec.png" />
-        <link
-            rel="stylesheet"
-            href="scripts/library/bootstrap/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="scripts/library/awesome-5/all.css" />
-        <link
-            rel="stylesheet"
-            href="scripts/library/swiper/swiper-bundle.min.css"
-        />
-
-        <link rel="stylesheet" href="styles/styles.css" />
-
-        <title>FPT-An Cư Lạc Nghiệp</title>
-    </head>
-    <body>
-        <div class="fpt-container">
-            <header class="header">
-                <div class="header-left">
-                    <div class="menu-button">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-
-                    <div class="menu-content">
-                        <div class="content">
-                            <button class="btn btn-icon closebtn">
-                                &times;
-                            </button>
-                            <div class="center-contet">
-                                <button class="btn btn-orange btn-register">
-                                    Đăng kí
-                                </button>
-                                <p class="slide-index">00. An Cư Lạc Nghiệp</p>
-                                <p class="slide-index">01. Đối tượng</p>
-                                <p class="slide-index">02. Quyền lợi</p>
-                                <p class="slide-index">03. Mục đích vay</p>
-                                <p class="slide-index">04. Ngân hàng áp dụng</p>
-                                <p class="slide-index">05. Thời gian</p>
-                                <p class="slide-index">06. Lắng nghe</p>
-                                <p class="slide-index">07. Ra quyết định</p>
-
-                                <hr />
-
-                                <div class="contact">
-                                    <p class="title">Liên hệ: FPT Software Career</p>
-                                    <ul>
-                                        <li>
-                                            <a href="https://career.fpt-software.com/" target="_blank"><img src="image/web-icon.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.facebook.com/FPTSoftware" target="_blank"><img src="image/face-icon.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/company/fptsoftwarecareer" target="_blank"><img src="image/linkin-icon.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:recruitment@fsoft.com.vn"><img src="image/mail-icon.png" alt=""></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <img
-                                class="logo-end"
-                                src="image/fpt_logo.png"
-                                alt="logo"
-                            />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/scss/library/bootstrap-3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/library/awesome-5/all.css" />
+    <link rel="stylesheet" href="styles/scss/library/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/animate.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>FVille</title>
+</head>
+<body>
+    <header class="fpt-header" id="menu1">
+        <section id="section-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <div class="fpt-logo">
+                            <a href="#"><img src="image/logo-fpt.png" alt="logo"></a>
                         </div>
                     </div>
-                    <span class="home-page">Trang chủ</span>
+                    <span class="menu-mobile">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
+                    <div class="col-12 col-sm-9 mobile__menu--wrapper">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav class="navigation" id="mainNav">
+                                <ul>
+                                    <li class="navigation__link" dataScroll="menu4">
+                                        <a>Fville Campus</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" data-target="#registerModal">Đăng ký Fville Tour</a>
+                                    </li>
+                                    <li class="navigation__link" dataScroll="menu5">
+                                        <a>Người Fville</a>
+                                    </li>
+                                    <li class="navigation__link" dataScroll="menu6">
+                                        <a>Jobs Opening</a>
+                                    </li>
+                                    <li class="navigation__link" dataScroll="menu7">
+                                        <a>Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="header-right">
-                    <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScghHzRVfVRkp26Dhal52xPs0FMXH10qdb_jE7bjuM9qFRQUg/viewform?vc=0&c=0&w=1&flr=0"
-                        target="_blank"
-                        class="btn-register hidden-xs"
-                        >Đăng kí</a
-                    >
-
-                    <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScghHzRVfVRkp26Dhal52xPs0FMXH10qdb_jE7bjuM9qFRQUg/viewform?vc=0&c=0&w=1&flr=0"
-                        target="_blank"
-                        class="btn-register-mobile visable-xs"
-                        >
-                            <img src="image/icon-register.svg" alt="" />
-                    </a>
-
-
-                    <!-- <span
-                        class="btn-register hidden-xs"
-                        >Đăng kí</span
-                    > -->
-                    
-                    <!-- <img class="btn-register visable-xs" src="image/icon-register.svg" alt="" /> -->
-
-                    <img class="icon-arrow" src="image/focus-icon.png" alt="" />
-
-                    <svg class="text-focus" width="84" height="41" viewBox="0 0 84 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="content" d="M1.314 4.616H7.542C8.754 4.616 9.66 4.874 10.26 5.39C10.86 5.906 11.16 6.686 11.16 7.73C11.16 8.606 10.986 9.272 10.638 9.728C10.302 10.172 9.756 10.478 9 10.646V10.718C9.816 10.898 10.398 11.204 10.746 11.636C11.094 12.068 11.268 12.758 11.268 13.706C11.268 14.798 10.974 15.62 10.386 16.172C9.81 16.724 8.856 17 7.524 17H1.314V4.616ZM6.408 9.548C6.852 9.548 7.182 9.518 7.398 9.458C7.614 9.386 7.764 9.266 7.848 9.098C7.932 8.93 7.974 8.678 7.974 8.342C7.974 7.994 7.932 7.736 7.848 7.568C7.776 7.4 7.632 7.286 7.416 7.226C7.212 7.166 6.876 7.136 6.408 7.136H4.428V9.548H6.408ZM6.498 14.48C6.954 14.48 7.29 14.45 7.506 14.39C7.722 14.318 7.872 14.198 7.956 14.03C8.04 13.862 8.082 13.598 8.082 13.238C8.082 12.866 8.04 12.59 7.956 12.41C7.884 12.23 7.734 12.11 7.506 12.05C7.29 11.978 6.954 11.942 6.498 11.942H4.428V14.48H6.498ZM15.5116 17.144C14.6116 17.144 13.9456 16.928 13.5136 16.496C13.0816 16.064 12.8656 15.356 12.8656 14.372C12.8656 13.652 12.9496 13.094 13.1176 12.698C13.2856 12.302 13.5736 12.014 13.9816 11.834C14.4016 11.654 15.0016 11.564 15.7816 11.564C16.3696 11.564 17.2156 11.588 18.3196 11.636V11.312C18.3196 10.856 18.2656 10.538 18.1576 10.358C18.0616 10.166 17.8696 10.046 17.5816 9.998C17.3056 9.95 16.8076 9.926 16.0876 9.926C15.1876 9.926 14.2936 9.974 13.4056 10.07V7.982C14.5336 7.778 15.7336 7.676 17.0056 7.676C18.2656 7.676 19.1896 7.808 19.7776 8.072C20.3776 8.336 20.7676 8.726 20.9476 9.242C21.1276 9.758 21.2176 10.502 21.2176 11.474V17H18.4456L18.3736 15.938H18.2296C17.9176 16.43 17.5396 16.754 17.0956 16.91C16.6516 17.066 16.1236 17.144 15.5116 17.144ZM16.8796 15.038C17.2156 15.038 17.4796 15.002 17.6716 14.93C17.8636 14.858 18.0136 14.732 18.1216 14.552C18.2536 14.324 18.3196 13.952 18.3196 13.436V13.076H16.6816C16.3576 13.076 16.1236 13.1 15.9796 13.148C15.8356 13.196 15.7336 13.292 15.6736 13.436C15.6256 13.568 15.6016 13.79 15.6016 14.102C15.6016 14.366 15.6316 14.564 15.6916 14.696C15.7516 14.828 15.8656 14.918 16.0336 14.966C16.2136 15.014 16.4956 15.038 16.8796 15.038ZM15.7096 20.798V18.116H18.7876V20.798H15.7096ZM28.9478 12.158C28.9478 11.486 28.9178 11.018 28.8578 10.754C28.8098 10.49 28.7078 10.322 28.5518 10.25C28.3958 10.178 28.1078 10.142 27.6878 10.142C27.2798 10.142 26.9798 10.202 26.7878 10.322C26.6078 10.43 26.4878 10.622 26.4278 10.898C26.3678 11.174 26.3378 11.612 26.3378 12.212V17H23.4398V7.82H26.1938L26.2658 8.918H26.4278C26.8958 8.09 27.7778 7.676 29.0738 7.676C29.8538 7.676 30.4418 7.814 30.8378 8.09C31.2458 8.354 31.5158 8.738 31.6478 9.242C31.7798 9.734 31.8458 10.406 31.8458 11.258V17H28.9478V12.158ZM49.0686 12.158C49.0686 11.498 49.0446 11.036 48.9966 10.772C48.9486 10.496 48.8526 10.322 48.7086 10.25C48.5646 10.178 48.3066 10.142 47.9346 10.142C47.5506 10.142 47.2746 10.196 47.1066 10.304C46.9506 10.412 46.8426 10.604 46.7826 10.88C46.7346 11.156 46.7106 11.6 46.7106 12.212V17H43.8306V12.158C43.8306 11.498 43.8066 11.036 43.7586 10.772C43.7106 10.496 43.6146 10.322 43.4706 10.25C43.3266 10.178 43.0686 10.142 42.6966 10.142C42.3246 10.142 42.0546 10.202 41.8866 10.322C41.7186 10.43 41.6046 10.622 41.5446 10.898C41.4966 11.162 41.4726 11.6 41.4726 12.212V17H38.5746V7.82H41.3286L41.4006 8.918H41.5446C42.0126 8.09 42.8646 7.676 44.1006 7.676C44.8086 7.676 45.3486 7.778 45.7206 7.982C46.0926 8.174 46.3626 8.486 46.5306 8.918H46.6926C47.1606 8.09 48.0246 7.676 49.2846 7.676C50.0286 7.676 50.5926 7.814 50.9766 8.09C51.3606 8.354 51.6186 8.738 51.7506 9.242C51.8946 9.746 51.9666 10.418 51.9666 11.258V17H49.0686V12.158ZM59.7464 15.902H59.5844C59.1164 16.73 58.2344 17.144 56.9384 17.144C56.1584 17.144 55.5644 17.012 55.1564 16.748C54.7604 16.472 54.4964 16.088 54.3644 15.596C54.2324 15.092 54.1664 14.414 54.1664 13.562V7.82H57.0644V12.662C57.0644 13.334 57.0884 13.802 57.1364 14.066C57.1964 14.33 57.3044 14.498 57.4604 14.57C57.6164 14.642 57.9044 14.678 58.3244 14.678C58.7324 14.678 59.0264 14.624 59.2064 14.516C59.3984 14.396 59.5244 14.198 59.5844 13.922C59.6444 13.646 59.6744 13.208 59.6744 12.608V7.82H62.5724V17H59.8184L59.7464 15.902ZM68.798 17.144C67.43 17.144 66.446 17.012 65.846 16.748C65.246 16.472 64.862 16.028 64.694 15.416C64.538 14.792 64.46 13.79 64.46 12.41C64.46 11.018 64.538 10.016 64.694 9.404C64.862 8.792 65.246 8.354 65.846 8.09C66.446 7.814 67.43 7.676 68.798 7.676C70.166 7.676 71.15 7.814 71.75 8.09C72.35 8.354 72.728 8.792 72.884 9.404C73.052 10.016 73.136 11.018 73.136 12.41C73.136 13.79 73.052 14.792 72.884 15.416C72.728 16.028 72.35 16.472 71.75 16.748C71.15 17.012 70.166 17.144 68.798 17.144ZM68.798 14.894C69.302 14.894 69.644 14.846 69.824 14.75C70.016 14.642 70.13 14.438 70.166 14.138C70.214 13.838 70.238 13.262 70.238 12.41C70.238 11.546 70.214 10.964 70.166 10.664C70.13 10.364 70.016 10.166 69.824 10.07C69.644 9.974 69.302 9.926 68.798 9.926C68.294 9.926 67.946 9.974 67.754 10.07C67.574 10.166 67.46 10.364 67.412 10.664C67.376 10.964 67.358 11.546 67.358 12.41C67.358 13.262 67.376 13.838 67.412 14.138C67.46 14.438 67.574 14.642 67.754 14.75C67.946 14.846 68.294 14.894 68.798 14.894ZM65.738 6.254V6.128L67.412 3.626H70.094L71.804 6.128V6.254H69.932L68.744 4.814L67.592 6.254H65.738ZM69.014 3.14V3.05L70.652 0.511999H73.442V0.601999L71.066 3.14H69.014ZM80.5396 12.158C80.5396 11.486 80.5096 11.018 80.4496 10.754C80.4016 10.49 80.2996 10.322 80.1436 10.25C79.9876 10.178 79.6996 10.142 79.2796 10.142C78.8716 10.142 78.5716 10.202 78.3796 10.322C78.1996 10.43 78.0796 10.622 78.0196 10.898C77.9596 11.174 77.9296 11.612 77.9296 12.212V17H75.0316V7.82H77.7856L77.8576 8.918H78.0196C78.4876 8.09 79.3696 7.676 80.6656 7.676C81.4456 7.676 82.0336 7.814 82.4296 8.09C82.8376 8.354 83.1076 8.738 83.2396 9.242C83.3716 9.734 83.4376 10.406 83.4376 11.258V17H80.5396V12.158ZM2.016 40V33.07H0.36V30.82H2.016V28.156H4.95V30.82H6.93V33.07H4.95V40H2.016ZM18.3465 29.2V29.506C18.3465 30.022 18.3045 30.43 18.2205 30.73C18.1485 31.03 18.0045 31.27 17.7885 31.45C17.5725 31.63 17.2485 31.756 16.8165 31.828V40H14.0625L13.9905 38.902H13.8285C13.3605 39.73 12.4785 40.144 11.1825 40.144C10.4025 40.144 9.8085 40.012 9.4005 39.748C9.0045 39.472 8.7405 39.088 8.6085 38.596C8.4765 38.092 8.4105 37.414 8.4105 36.562V30.82H11.3085V35.662C11.3085 36.334 11.3325 36.802 11.3805 37.066C11.4405 37.33 11.5485 37.498 11.7045 37.57C11.8605 37.642 12.1485 37.678 12.5685 37.678C12.9765 37.678 13.2705 37.624 13.4505 37.516C13.6425 37.396 13.7685 37.198 13.8285 36.922C13.8885 36.646 13.9185 36.208 13.9185 35.608V30.82H15.3045C15.6525 30.82 15.9045 30.784 16.0605 30.712C16.2165 30.64 16.3185 30.526 16.3665 30.37C16.4265 30.214 16.4565 29.974 16.4565 29.65V29.2H18.3465ZM25.4173 40L22.6813 30.82H25.6333L27.3253 37.336H27.5053L29.1613 30.82H32.0593L29.3233 40H25.4173ZM35.6386 40.144C34.7386 40.144 34.0726 39.928 33.6406 39.496C33.2086 39.064 32.9926 38.356 32.9926 37.372C32.9926 36.652 33.0766 36.094 33.2446 35.698C33.4126 35.302 33.7006 35.014 34.1086 34.834C34.5286 34.654 35.1286 34.564 35.9086 34.564C36.4966 34.564 37.3426 34.588 38.4466 34.636V34.312C38.4466 33.856 38.3926 33.538 38.2846 33.358C38.1886 33.166 37.9966 33.046 37.7086 32.998C37.4326 32.95 36.9346 32.926 36.2146 32.926C35.3146 32.926 34.4206 32.974 33.5326 33.07V30.982C34.6606 30.778 35.8606 30.676 37.1326 30.676C38.3926 30.676 39.3166 30.808 39.9046 31.072C40.5046 31.336 40.8946 31.726 41.0746 32.242C41.2546 32.758 41.3446 33.502 41.3446 34.474V40H38.5726L38.5006 38.938H38.3566C38.0446 39.43 37.6666 39.754 37.2226 39.91C36.7786 40.066 36.2506 40.144 35.6386 40.144ZM37.0066 38.038C37.3426 38.038 37.6066 38.002 37.7986 37.93C37.9906 37.858 38.1406 37.732 38.2486 37.552C38.3806 37.324 38.4466 36.952 38.4466 36.436V36.076H36.8086C36.4846 36.076 36.2506 36.1 36.1066 36.148C35.9626 36.196 35.8606 36.292 35.8006 36.436C35.7526 36.568 35.7286 36.79 35.7286 37.102C35.7286 37.366 35.7586 37.564 35.8186 37.696C35.8786 37.828 35.9926 37.918 36.1606 37.966C36.3406 38.014 36.6226 38.038 37.0066 38.038ZM34.3246 29.254V29.128L35.9986 26.626H38.6806L40.3906 29.128V29.254H38.5186L37.3306 27.814L36.1786 29.254H34.3246ZM37.6006 26.14V26.05L39.2386 23.512H42.0286V23.602L39.6526 26.14H37.6006ZM49.0748 35.158C49.0748 34.486 49.0448 34.018 48.9848 33.754C48.9368 33.49 48.8348 33.322 48.6788 33.25C48.5228 33.178 48.2348 33.142 47.8148 33.142C47.4068 33.142 47.1068 33.202 46.9148 33.322C46.7348 33.43 46.6148 33.622 46.5548 33.898C46.4948 34.174 46.4648 34.612 46.4648 35.212V40H43.5668V30.82H46.3208L46.3928 31.918H46.5548C47.0228 31.09 47.9048 30.676 49.2008 30.676C49.9808 30.676 50.5688 30.814 50.9648 31.09C51.3728 31.354 51.6428 31.738 51.7748 32.242C51.9068 32.734 51.9727 33.406 51.9727 34.258V40H49.0748V35.158ZM60.0515 34.582C60.0515 33.898 60.1475 33.412 60.3395 33.124C60.5315 32.836 60.8555 32.614 61.3115 32.458L61.8875 32.26C62.1635 32.176 62.3555 32.098 62.4635 32.026C62.5835 31.954 62.6615 31.846 62.6975 31.702C62.7455 31.558 62.7695 31.33 62.7695 31.018C62.7695 30.682 62.7155 30.442 62.6075 30.298C62.5115 30.142 62.3495 30.046 62.1215 30.01C61.9055 29.974 61.5515 29.956 61.0595 29.956C60.6875 29.956 60.2135 29.98 59.6375 30.028C59.0615 30.064 58.5995 30.106 58.2515 30.154V27.814C58.7555 27.718 59.3555 27.64 60.0515 27.58C60.7475 27.508 61.3835 27.472 61.9595 27.472C62.8355 27.472 63.5495 27.562 64.1015 27.742C64.6655 27.922 65.0975 28.258 65.3975 28.75C65.6975 29.242 65.8475 29.944 65.8475 30.856C65.8475 31.516 65.7755 32.038 65.6315 32.422C65.4875 32.806 65.2895 33.094 65.0375 33.286C64.7975 33.478 64.4855 33.646 64.1015 33.79L63.5075 33.988C63.1955 34.096 62.9855 34.18 62.8775 34.24C62.7815 34.3 62.7155 34.396 62.6795 34.528C62.6555 34.66 62.6435 34.9 62.6435 35.248V35.77H60.0515V34.582ZM59.8175 40V37.336H62.8955V40H59.8175Z" fill="#F35D09"/>
-                    </svg>
+            </div>
+        </section>
+        <section class="page-section hero-section">
+            <div class="container">
+                <div class="row d-flex align-items-center d-block-xs">
+                    <div class="col-xs-12 col-sm-6 col-md-5">
+                        <div class="block-left-content">
+                            <div class="block-title color-white header-banner-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s">
+                                <img src="image/go-fville.png" alt="image 1">
+                            </div>
+                            <a id="goToEvent" class="btn btn-yellow mt-50 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">GO FVILLE</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7">
+                        <div class="right-content wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <img class="video-bg" src="image/video-bg.png" alt="">
+                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="logo">
-                    <img
-                        src="image/fpt_logo-white.svg"
-                        alt="logo"
-                    />
+                <div class="bottom-content">
+                    <div class="box-content">
+                        <img class="icon" src="image/nhay-icon.png" alt="image 1">
+                        <h4 class="wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.3s">FVille là nơi bất kỳ một FSOFTer nào cũng đều muốn dành thời gian để gắn bó và trải nghiệm</h4>
+                    </div>
                 </div>
-            </header>
-            <div class="swiper-container fpt-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-1">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-1.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-1.svg" alt="">
+            </div>
+        </section>
+    </header>
 
-                        <img class="animate center swiper-lazy" data-src="image/center-1.png" alt="">
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-1.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-1.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-2">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-2.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-2.svg" alt="">
-                        
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-2.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-2.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-3">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-3.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-3.svg" alt="">
-
-                        <img class="animate center swiper-lazy" data-src="image/center-3.png" alt="">
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-3.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-3.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-4">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-4.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-4.svg" alt="">
-
-                        <img class="animate center swiper-lazy" data-src="image/center-4.png" alt="">
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-4.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-4.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-5">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-5.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-5.svg" alt="">
-
-                        <img class="animate center swiper-lazy" data-src="image/center-5.png" alt="">
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-5.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-5.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-6">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-6.svg" alt="">
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-6.svg" alt="" />
-
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-6.svg" alt="">
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-6.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-7">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-7.svg" alt="">
-                        <img class="top visable-xs swiper-lazy" data-src="image/top-7.svg" alt="">
-
-                        <img class="animate center hidden-xs swiper-lazy" data-src="image/center-7.png" alt="">
-                        <img class="center visable-xs swiper-lazy" data-src="image/center-7-mobile.png" alt="">
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-7.svg" alt="" />
-                        <img class="bottom visable-xs swiper-lazy" data-src="image/bottom-7.svg" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide-8">
-                        <img class="animate left hidden-xs swiper-lazy" data-src="image/left-8.svg" alt="">
-
-                        <div class="center form-register">
-                            <div class="form-content content-register">
-                                <div class="form-header">
-                                    <img class="back-icon visable-xs swiper-lazy" data-src="image/back-icon.jpg" alt="">
-                                    <h5 class="form-title">
-                                        Đăng ký nhận tư vấn
-                                    </h5>
+    <section class="page-section section-padding fpt-intro" id="menu2">
+        <div class="container">
+            <h2 class="title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">Nơi trí tuệ <span class="text-success">vươn tầm thế giới</span></h2>
+            <ul class="main-list wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                <li class="slide-index active">Sillicon Valley của FPT Software</li>
+                <li class="slide-index">Quy tụ đội ngũ nhân sự Top 3%</li>
+                <li class="slide-index">Không gian làm việc màu sắc toàn cầu hóa</li>
+                <li class="slide-index">Nơi khởi đầu của các sản phẩm "made by FSOFT"</li>
+            </ul>
+            <div class="slider-type-1 mt-80">
+                <div class="swiper swiper-intro">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="fpt__item--slider">
+                                <div class="fpt-slider-image">
+                                    <img src="image/slider-item-1.png" alt="image 1">
                                 </div>
-                                <!-- <div class="form-body">
+                                <div class="fpt-slider-content">
+                                    <h5 class="slider-title">Sillicon Valley của FPT Software </h5>
+                                    <p>
+                                        Trải nghiệm campus xanh, được thỏa sức sáng tạo với không gian làm việc tiêu chuẩn quốc tế được thổi hồn từ những tập đoàn công nghệ lớn như Infosys, Neusoft, TCS, Wipro, Microsoft... Tổ hợp văn phòng được thiết kế theo phong cách từ truyền thống đến hiện đại, đem theo tinh thần Việt hòa vào dòng chảy thế giới.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                            <div class="fpt__item--slider">
+                                <div class="fpt-slider-image">
+                                    <img src="image/slider-item-2.png" alt="image 1">
+                                </div>
+                                <div class="fpt-slider-content">
+                                    <h5 class="slider-title">Quy tụ đội ngũ nhân sự Top 3%</h5>
+                                    <p>
+                                        Fville là căn cứ quy tụ đông đảo nhất đội ngũ nhân sự thuộc Top 3% của FSOFT, bao gồm những cá nhân xuất sắc nhất FPT Software - nơi khơi dậy sự sáng tạo cũng những bộ não cừ khôi tham gia hành trình dẫn dắt FPT Software vươn mình quốc tế. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div class="fpt__item--slider">
+                                <div class="fpt-slider-image">
+                                    <img src="image/slider-item-3.png" alt="image 1">
+                                </div>
+                                <div class="fpt-slider-content">
+                                    <h5 class="slider-title">Không gian làm việc màu sắc toàn cầu hóa</h5>
+                                    <p>Trải nghiệm campus xanh, được thỏa sức sáng tạo với không gian làm việc tiêu chuẩn quốc tế được thổi hồn từ những tập đoàn công nghệ lớn như Infosys, Neusoft, TCS, Wipro, Microsoft... Tổ hợp văn phòng được thiết kế theo phong cách từ truyền thống đến hiện đại, đem theo tinh thần Việt hòa vào dòng chảy thế giới.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fpt__item--slider">
+                                <div class="fpt-slider-image">
+                                    <img src="image/slider-item-4.png" alt="image 1">
+                                </div>
+                                <div class="fpt-slider-content">
+                                    <h5 class="slider-title">Nơi khởi đầu của các sản phẩm "made by FSOFT"</h5>
+                                    <p>Điểm khởi đầu của những sản phẩm "made by FPT" đạt nhiều giải thưởng trong nước và quốc tế như: Akabot, Codelearn, Akachain, myFPT, Akaminds, Utop...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-80">
+                <a class="btn btn-yellow wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">GO FVILLE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section section-padding fpt-campus" id="menu3">
+        <div class="container">
+            <div class="fpt__campus--wrapper">
+                <div class="bg-project"></div>
+                <div class="content-left">
+                    <h2 class="title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s"><span class="text-success">1000+</span> Dự án đa quốc gia</h2>
+                    <p class="sub-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">Hàng loạt domain đa lĩnh vực, mang đến môi trường làm việc năng động, nhiều trải nghiệm! </p>
+                    <div class="wrap-btn">
+                        <div id="projectNext" class="swiper-button swiper-button-next"><img src="image/next-icon.png" alt=""></div>
+                        <div id="projectPrev" class="swiper-button swiper-button-prev"><img src="image/prev-icon.png" alt=""></div>
+                    </div>
+                </div>
+                
+                <div class="swiper swiper-project">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/project-1.png" alt="">
+                                </div>
+                                <p class="project-name">Automotive</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/project-2.png" alt="">
+                                </div>
+                                <p class="project-name">Smart Devices</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/project-3.png" alt="">
+                                </div>
+                                <p class="project-name">Tester</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section section-padding fpt-campus" id="menu4">
+        <div class="container">
+            <div class="fpt__campus--wrapper">
+                <div class="content-left">
+                    <h2 class="title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s"><span class="text-success">GREEN DAY</span> - <br>FVILLE CAMPUS TOUR</h2>
+                    <p class="sub-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">Khám phá trung tâm công nghệ thu nhỏ giữa lòng Hoà Lạc với FVILLE TOUR.</p>
+                    <div class="wrap-btn">
+                        <div id="campusNext" class="swiper-button swiper-button-next"><img src="image/next-icon.png" alt=""></div>
+                        <div id="campusPrev" class="swiper-button swiper-button-prev"><img src="image/prev-icon.png" alt=""></div>
+                    </div>
+                </div>
+                
+                <div class="swiper swiper-campus">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/campus-1.png" alt="">
+                                </div>
+                                <p class="campus-name">Cổng chào Fville</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/campus-2.png" alt="">
+                                </div>
+                                <p class="campus-name">Cổng trời</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div class="box-content">
+                                <div class="box-image">
+                                    <img src="image/campus-3.png" alt="">
+                                </div>
+                                <p class="campus-name">Hồ cá Koi</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="text-center mt-100">
+                <a class="btn btn-yellow wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">Đăng ký tham gia Fville Tour ></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section section-padding fpt-people" id="menu5">
+        <div class="container">
+            <h2 class="title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s"><span class="text-success">Người FVillE</span> <br>nói gì ?</h2>
+            <div class="fpt__people--wrapper">
+                <img class="people-bg" src="image/people-bg.png" alt="">
+                <div id="peopleNext" class="swiper-button swiper-button-next"><img src="image/next-icon.png" alt=""></div>
+                <div id="peoplePrev" class="swiper-button swiper-button-prev"><img src="image/prev-icon.png" alt=""></div>
+                <div class="swiper swiper-people">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="box-people-talk">
+                                <div class="quote">
+                                    <img class="icon" src="image/nhay-icon.png" alt="image 1">
+                                    <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi eros vitae, tellus ultrices lorem donec facilisis. Etiam et, vel cursus magna. Lacus  ...</span>
+                                </div>
+                                <div class="wrap-name">
+                                    <img src="image/user.png" alt="">
+                                    <div class="box-name">
+                                        <p class="name">Nguyễn Văn F</p>
+                                        <p class="role">UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                            <div class="box-people-talk">
+                                <div class="quote">
+                                    <img class="icon" src="image/nhay-icon.png" alt="image 1">
+                                    <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi eros vitae, tellus ultrices lorem donec facilisis. Etiam et, vel cursus magna. Lacus  ...</span>
+                                </div>
+                                <div class="wrap-name">
+                                    <img src="image/user.png" alt="">
+                                    <div class="box-name">
+                                        <p class="name">Nguyễn Văn F</p>
+                                        <p class="role">UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.5s">
+                            <div class="box-people-talk">
+                                <div class="quote">
+                                    <img class="icon" src="image/nhay-icon.png" alt="image 1">
+                                    <span class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi eros vitae, tellus ultrices lorem donec facilisis. Etiam et, vel cursus magna. Lacus  ...</span>
+                                </div>
+                                <div class="wrap-name">
+                                    <img src="image/user.png" alt="">
+                                    <div class="box-name">
+                                        <p class="name">Nguyễn Văn F</p>
+                                        <p class="role">UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="text-center mt-100">
+                <a class="btn btn-yellow wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">GO FVILLE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section section-padding fpt-job" id="menu6">
+        <div class="container">
+            <h2 class="title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s">FVille <span class="text-success">job opening</span></h2>
+            <div class="fpt__job--wrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                            <div class="fpt__job--title">
+                                <div class="job-number">01</div>
+                                <h4 class="job-name">Android Developer</h4>
+                            </div>
+                            <div class="fpt__job--content">
+                                <div class="content">
+                                    <p class="name">10 Android Developer</p>
+                                    <p class="salary">Up to 2000$</p>
+                                </div>
+                                <div class="d-flex justify-content-end fpt__job-btn">
+                                    <a href="#" class="btn-outline">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
+                            <div class="fpt__job--title">
+                                <div class="job-number">02</div>
+                                <h4 class="job-name">C++ Developer</h4>
+                            </div>
+                            <div class="fpt__job--content">
+                                <div class="content">
+                                    <p class="name">10 C++ Developer</p>
+                                    <p class="salary">Up to 2000$</p>
+                                </div>
+                                <div class="d-flex justify-content-end fpt__job-btn">
+                                    <a href="#" class="btn-outline">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
+                            <div class="fpt__job--title">
+                                <div class="job-number">03</div>
+                                <h4 class="job-name">Business Analyst</h4>
+                            </div>
+                            <div class="fpt__job--content">
+                                <div class="content">
+                                    <p class="name">10 Business Analyst</p>
+                                    <p class="salary">Up to 2000$</p>
+                                </div>
+                                <div class="d-flex justify-content-end fpt__job-btn">
+                                    <a href="#" class="btn-outline">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="fpt__job--item wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">
+                            <div class="fpt__job--title">
+                                <div class="job-number">04</div>
+                                <h4 class="job-name">Java Developer</h4>
+                            </div>
+                            <div class="fpt__job--content">
+                                <div class="content">
+                                    <p class="name">10 Java Developer</p>
+                                    <p class="salary">Up to 2000$</p>
+                                </div>
+                                <div class="d-flex justify-content-end fpt__job-btn">
+                                    <a href="#" class="btn-outline">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-80">
+                    <a class="btn btn-yellow wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.6s">GO FVILLE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-section fpt-footer" id="menu7">
+        <div class="container wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+            <div class="footer__center">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="footer__logo">
+                                <img src="image/Logo_fpt_software.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-7">
+                                <ul class="list-info">
+                                    <li>
+                                        <img src="image/location-icon.png">
+                                        F-Ville Building, Khu công nghệ cao Láng Hòa Lạc, Km29 Đại lộ Thăng Long Việt Nam, 29km ĐCT08, Thạch Hoà, Thạch Thất, Hà Nội.</li>
+                                    <li><img src="image/phone-icon.png"> +84 24 73 044 888</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                                <ul class="list-info">
+                                    <li><img src="image/mail-icon.png"> <a href="mailto:recruitment@fsoft.com.vn">recruitment@fsoft.com.vn</a></li>
+                                    <li><img src="image/web-icon.png"> <a target="_blank" href="https://career.fpt-software.com/">career.fpt-software.com</a></li>
+                                    <li><img src="image/fb-icon.png"> <a target="_blank" href="https://www.facebook.com/fptsoftware">www.facebook.com/fptsoftware</a></li>
+                                    <li><img src="image/linkedin-icon.png"> <a target="_blank" href="https://www.linkedin.com/company/fpt-software">www.linkedin.com/company/fpt-software</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="fpt-copyright">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center fpt__copyright">
+                <p class="fs-14">Copyright © 2021 FPT Software.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="form-register">
+                    <div class="form-content content-register">
+                        <div class="form-header">
+                            <h5 class="form-title text-success">
+                                GO FVILLE - SHAPING GLOBAL IT CAREER HERE!
+                            </h5>
+                            <button class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                                <img src="image/close-icon.png" alt="">  
+                            </button>
+                        </div>
+                        <div class="form-body">
+                            <div class="row row-padding-8">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Họ và tên</label>
+                                        <label>Họ và tên <span class="required">*</span></label>
                                         <input
                                             class="form-control"
                                             placeholder="Nhập tên đầy đủ của bạn"
                                         />
                                     </div>
-            
+
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input
-                                            class="form-control"
-                                            placeholder="Nhập địa chỉ email"
-                                        />
-                                    </div>
-            
-                                    <div class="form-group">
-                                        <label>Số điện thoại</label>
+                                        <label>Số điện thoại <span class="required">*</span></label>
                                         <input type="number"
                                             class="form-control"
                                             placeholder="Số điện thoại di động"
                                         />
                                     </div>
-            
-                                    <div class="form-row">
-                                        <div class="form-group col-md-7">
-                                            <label>Vị trí ứng tuyển</label>
-                                            <select id="inputState" class="form-control">
-                                                <option selected>
-                                                    Chọn vị trí ứng tuyển
-                                                </option>
-                                                <option>Project Manager</option>
-                                                <option>Solution Achitect</option>
-                                                <option>Senior Tester/Business Analyst</option>
-                                                <option>Senior Developer</option>
-                                                <option>Data Engineer/Data Analyst</option>
-                                                <option>Quality Assurance</option>
-                                                <option>Khác</option>
-            
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-5 text-right">
-                                            <label>Số năm kinh nghiệm</label>
-                                            <input type="number"
-                                                class="form-control text-right"
-                                                placeholder="03"
-                                            />
-                                        </div>
+
+                                    <div class="form-group">
+                                        <label>Vị trí ứng tuyển <span class="required">*</span></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>
+                                                Chọn vị trí ứng tuyển
+                                            </option>
+                                            <option>Senior Developer</option>
+                                            <option>Business Analyst</option>
+                                            <option>Account Manager</option>
+                                            <option>Senior Developer</option>
+                                            <option>Test Leader</option>
+                                            <option>Data Engineer</option>
+                                            <option>Project Manager</option>
+                                            <option>Automotive Tester</option>
+                                            <option>Khác:......</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="required">*</span></label>
+                                        <input
+                                            class="form-control"
+                                            placeholder="Nhập địa chỉ email"
+                                        />
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Câu hỏi</label>
-                                        <input
-                                            class="form-control"
-                                            placeholder="Gửi câu hỏi của bạn tại đây"
-                                        />
+                                        <label>Địa điểm làm việc hiện tại <span class="required">*</span></label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>
+                                                Chọn vị trí ứng tuyển
+                                            </option>
+                                            <option>Hà Nội</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Hồ Chí Minh</option>
+                                            <option>Tỉnh thành khác</option>
+                                            <option></option>
+                                            <option></option>
+
+                                        </select>
                                     </div>
-            
-                                    <div class="form-group form-upload-file">
-                                        <label for="file-upload" class="custom-file-upload">
-                                            <img
-                                                class="icon-upload swiper-lazy"
-                                                data-src="image/upload-icon.png"
-                                                alt=""
-                                            />
-                                            <span class="text-file">Tải File CV</span>
-                                        </label>
-                                        <input onchange="readURL(this);" id="file-upload" type="file" />
+
+                                    <div class="form-group">
+                                        <label>Kinh nghiệm <span class="required">*</span></label>
+                                        <select class="form-control">
+                                            <option selected>
+                                                Chọn số năm kinh nghiệm
+                                            </option>
+                                            <option>Dưới 1 năm</option>
+                                            <option>1-3 năm</option>
+                                            <option>3-5 năm</option>
+                                            <option>5-7 năm</option>
+                                            <option>> 7 năm</option>
+                                        </select>
                                     </div>
-                                </div> -->
-                                <!-- <div class="form-footer">
-                                    <button
-                                        type="button"
-                                        class="btn btn-orange btn-submit"
-                                    >
-                                        Đăng kí
-                                    </button>
-                                </div> -->
-                                <div class="form-footer">
-                                    <a
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLScghHzRVfVRkp26Dhal52xPs0FMXH10qdb_jE7bjuM9qFRQUg/viewform?vc=0&c=0&w=1&flr=0"
-                                        target="_blank"
-                                        class="btn btn-orange btn-link-register"
-                                    >
-                                        Đăng kí
-                                    </a>
                                 </div>
                             </div>
+                            
+                            <div class="form-group">
+                                <label>Kỹ năng lập trình<span class="required">*</span></label>
+                                <select class="form-control fpt-select">
+                                    <option selected>
+                                        Chọn số kĩ năng
+                                    </option>
+                                    <option>Java</option>
+                                    <option>.Net</option>
+                                    <option>Front-end</option>
+                                    <option>Full Stack</option>
+                                    <option>Sharepoint</option>
+                                    <option>NodeJS</option>
+                                    <option>Angular</option>
+                                    <option>Python</option>
+                                    <option>Mobile (iOS, Android)</option>
+                                    <option>Mục khác:</option>
+                                </select>
+                            </div>
+    
+                            <div class="form-group form-upload-file">
+                                <label>CV của bạn</label>
 
-                            <!-- <div class="form-content content-done" style="display: none;">
-                                <div class="form-header">
-                                    <img class="back-icon visable-xs swiper-lazy" data-src="image/back-icon.jpg" alt="">
-                                    <h5 class="form-title">
-                                        Đăng kí thành công!
-                                    </h5>
+                                <div class="form-output">
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <img
+                                            class="icon-upload"
+                                            src="image/attach-icon.png"
+                                            alt=""
+                                        />
+                                        <span class="text-file">Tải File CV</span>
+                                    </label>
+                                    <input onchange="readURL(this);" id="file-upload" type="file" />
                                 </div>
-                                <div class="form-body">
-                                    <p class="main-text">
-                                        Cám ơn bạn đã gửi thông tin! Chúng tôi sẽ sớm liên hệ lại với bạn hãy chú ý điện thoại và hòm email bạn nhé!
-                                    </p>
-                                    <img class="swiper-lazy" data-src="image/icon-done.png" alt="">
-                                </div>
-                                <div class="form-footer">
-                                    <p class="connect-text">Kết nối với chúng tôi</p>
-                                    <div class="group-link">
-                                        <a href="https://www.facebook.com/109085624318788/posts/294416909118991/" target="_blank"
-                                            class="btn btn-orange btn-social"
-                                        >
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z" fill="white"/>
-                                            </svg>
-                                            facebook
-                                        </a>
+                                <p class="name-file"></p>
+                            </div>
 
-                                        <a href="https://www.linkedin.com/company/fpt-software/" target="_blank"
-                                            class="btn btn-orange btn-social"
-                                        >
-                                            
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C15.5189 0 20 4.4751 20 10C20 15.5189 15.5249 20 10 20C4.4811 20 0 15.5249 0 10C0 4.4811 4.4751 0 10 0ZM8.71026 8.0144H10.7618V9.06419H10.7918C11.0798 8.54829 11.7756 8.0144 12.8194 8.0144C14.985 8.0144 15.3869 9.36413 15.3869 11.1158V14.6911H13.2454V11.5237C13.2454 10.7678 13.2274 9.79604 12.1296 9.79604C11.0138 9.79604 10.8458 10.6179 10.8458 11.4697V14.6911H8.70426V8.0144H8.71026ZM7.22855 6.16077C7.22855 6.77265 6.73065 7.27654 6.11278 7.27654C5.5009 7.27654 4.997 6.77864 4.997 6.16077C4.997 5.54889 5.4949 5.04499 6.11278 5.04499C6.72465 5.04499 7.22855 5.54289 7.22855 6.16077ZM5.003 8.0144H7.22855V14.6911H5.003V8.0144Z" fill="white"/>
-                                            </svg>
-                                            linkedin
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                            <div class="form-group">
+                                <label>Bạn biết đến thông tin tuyển dụng từ nguồn nào?</label>
+                                <textarea class="form-control"
+                                    placeholder="VD: Facebook, LinkedIn, Zalo, Website, Báo chí, Bạn bè giới thiệu, Khác."></textarea>
+                            </div>
                         </div>
-
-                        <img class="animate right hidden-xs swiper-lazy" data-src="image/right-8.svg" alt="" />
+                        
+                        <div class="form-footer">
+                            <button
+                                type="button"
+                                class="btn btn-submit"
+                                data-toggle="modal" data-target="#successModal"
+                            >
+                                Đăng kí
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-container fpt-swiper-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <span>00. An Cư Lạc Nghiệp</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>01. Đối tượng</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>02. Quyền lợi</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>03. Mục đích vay</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>04. Ngân hàng áp dụng</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>05. Thời gian</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>06. Lắng nghe</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <span>07. Ra quyết định</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog submit-success" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="form-register">
+                    <div class="form-content content-done">
+                        <div class="form-header">
+                            <button class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                                <img src="image/close-icon.png" alt="">  
+                            </button>
+                        </div>
+                        <div class="form-body">
+                            <img src="image/success-icon.png" alt="">
+
+                            <p class="main-text">
+                                Chúc mừng bạn đã Đăng ký thành công chương trình <span class="text-success">"FVILLE TOUR".</span> Chúng tôi sẽ liên hệ với bạn để xác nhận lại thông tin đăng ký.
+                            </p>
+                        </div>
+                        <div class="form-footer">
+                            <button
+                                type="button"
+                                class="btn btn-submit"
+                            >
+                            Confirm
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-button swiper-button-next"></div>
-                <div class="swiper-button swiper-button-prev"></div>
             </div>
+          </div>
+        </div>
+    </div>
 
-            <div class="stepper-wrapper">
-                <span class="number current-slide">00</span>
-                <div class="stepper-item active">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <div class="stepper-item">
-                    <div class="step-counter"></div>
-                </div>
-                <span class="number total-slide">07</span>
-            </div>
-
-            <div class="hotline hotline-fix">
-                <p class="title">Hotline</p>
-                <p>086.711.2399</p>
-                <p>091.752.9006</p>
-                <p>089.918.6788</p>
-            </div>
-        </div>        
-
-        <script src="scripts/library/jquery-3.2.1.slim.min.js"></script>
-        <script src="scripts/library/bootstrap/bootstrap.min.js"></script>
-        <script src="scripts/library/swiper/swiper-bundle.min.js"></script>
-
-        <script>
-            // alert($( window ).width() + '         ' + $( window ).height());
-
-            function readURL(input) {
-                if (input.files && input.files[0]) {
-
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        $('.text-file').text(input.files[0].name);
-                    };
-
-                    reader.readAsDataURL(input.files[0]);
-
-                }
-            }
-
-            $(".btn-submit").click(function () {
-                $(".content-register").css("display", 'none');
-                $(".content-done").css("display", 'block');
-            });
-
-            $(".back-icon").click(function () {
-                swiperMain.slideTo(6, 300, false);
-            });
-
-            $(".home-page").click(function () {
-                swiperMain.slideTo(0, 300, false);
-            });
-
-            // $(".btn-register").click(function () {
-            //     swiperMain.slideTo(7, 300, false);
-            //     $(".menu-content").width("0");
-            // });
-
-            $(".slide-index").click(function () {
-                $(".menu-content").width("0");
-                swiperMain.slideTo($(this).index() - 1, 300, false);
-            });
-
-            $(".menu-button").on("click", function (e) {
-                event.stopPropagation();
-                $(".menu-content").width("340px");
-                $(".menu-content .slide-index, .menu-content .hotline").css(
-                    "color",
-                    "#000"
-                );
-            });
-
-            $(".closebtn").on("click", function (e) {
-                $(".menu-content .slide-index, .menu-content .hotline").css(
-                    "color",
-                    "transparent"
-                );
-                $(".menu-content").width("0");
-            });
-
-            $(window).click(function() {
-                $(".menu-content").width("0");
-            });
-
-            $('.menu-content').click(function(event){
-                event.stopPropagation();
-            });
-
-            var swiperThumbs = new Swiper(".fpt-swiper-thumbs", {
-                spaceBetween: 0,
-                slidesPerView: 1,
-                freeMode: true,
-                watchSlidesVisibility: true,
-                watchSlidesProgress: true,
-                slideToClickedSlide: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                on: {
-                    slideChange: function () {
-                        let index = swiperThumbs.realIndex;
-                        swiperMain.slideTo(index, 300, false);
-                    },
-                },
-            });
-
-            var swiperMain = new Swiper(".fpt-swiper", {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                effect: "fade",
-                preloadImages: false,
-                lazy: {
-                    loadPrevNext: true,
-                },
-                autoplay: {
-                	delay: 3000,
-                },
-                mousewheel: {
-                    releaseOnEdges: true,
-                },
-                thumbs: {
-                    swiper: swiperThumbs,
-                },
-                on: {
-                    init: function(swiper) {
-                        $(".fpt-swiper .swiper-slide:nth-child(1) .animate").addClass("move");
-                    },
-                    slideChange: function () {
-                        let index = swiperMain.realIndex;
-                        $(".fpt-swiper .swiper-slide .animate").removeClass("move");
-                        $(".fpt-swiper .swiper-slide:eq("+(index)+") .animate").addClass("move");
-                        $(".current-slide").text("0" + index);
-                        $(".stepper-item").removeClass("active");
-                        $(".stepper-item").eq(index).addClass("active");
-                        $(".fpt-container").removeClass("page-register");
-                        if (index === 7) {
-                            $(".content-register").css("display", 'block');
-                            $(".content-done").css("display", 'none');
-                            $(".fpt-container").addClass("page-register");
-                        }
-                    },
-                },
-            });
-        </script>
-    </body>
+    <script src="scripts/library/jquery-3.6.0.min.js"></script>
+    <script src="scripts/library/bootstrap/bootstrap.js"></script>
+    <script src="scripts/library/slick/slick.min.js"></script>
+    <script src="scripts/library/wow.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
 </html>
