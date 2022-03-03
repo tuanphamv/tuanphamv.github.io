@@ -403,3 +403,162 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .mt-100,
+  .mt-80 {
+    margin-top: 40px !important;
+  }
+  .hero-section {
+    padding: 30px 0 180px;
+    .block-left-content {
+      img {
+        width: 255px;
+      }
+      .btn {
+        margin-top: 30px !important;
+        margin-bottom: 30px;
+      }
+    }
+    .right-content {
+      .video-bg {
+        display: none;
+      }
+    }
+
+    .bottom-content {
+      bottom: -50px;
+      width: 100%;
+      .box-content {
+        padding: 30px 20px;
+        h4 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .fpt-intro {
+    .title {
+      font-size: 40px;
+      line-height: 46px;
+      margin-bottom: 40px;
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .main-list {
+      align-items: unset;
+      li {
+        font-size: 15px;
+      }
+    }
+    .slider-type-1 {
+      margin-top: 50px !important;
+      .swiper-slide {
+        .fpt__item--slider {
+          width: 100%;
+          flex-direction: column;
+          .fpt-slider-image {
+            width: 100%;
+          }
+          .fpt-slider-content {
+            padding: 30px 16px;
+            .slider-title {
+              font-size: 22px;
+              margin-bottom: 15px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fpt-campus {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    .bg-project {
+      display: none;
+    }
+
+    .fpt__campus--wrapper {
+      flex-direction: column;
+      .content-left {
+        padding-bottom: 90px;
+        .title {
+          font-size: 36px;
+          line-height: 40px;
+        }
+        .sub-title {
+          font-size: 16px;
+          line-height: 22px;
+          margin: 22px 0 20px 0;
+        }
+      }
+      .swiper {
+        width: 100%;
+        .swiper-slide {
+          width: 100%;
+          padding-top: 0 !important;
+          .box-content {
+            .box-image {
+              padding-bottom: 100% !important;
+              padding-top: 0;
+            }
+            .campus-name {
+              padding: 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fpt-people {
+    .people-bg {
+      display: none;
+    }
+    .title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .fpt__people--wrapper {
+      .swiper-button {
+        top: -40px;
+        &-next {
+          right: unset;
+          left: 64px;
+        }
+        &-prev {
+          right: unset;
+          left: 0;
+        }
+      }
+      .swiper {
+        .swiper-slide {
+          width: 100%;
+          padding: 16px;
+          .box-people-talk {
+            padding: 20px;
+            .quote .content {
+              font-size: 20px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fpt-job {
+    .title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}
