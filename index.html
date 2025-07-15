@@ -254,8 +254,8 @@
         if (e.target.classList.contains("wallet-check-btn")) {
           const name = e.target.getAttribute("data-name");
           const address = e.target.getAttribute("data-address");
-          // executeSingleQuery(name, address);
-          executeBatchQuery();
+          executeSingleQuery(name, address);
+          // executeBatchQuery();
         }
       });
 
@@ -500,6 +500,11 @@
               7
             )}...${u.address.slice(-4)}</div>
         </div>
+        <button class="wallet-check-btn px-5 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium" data-name="${
+          u.name || ""
+        }" data-address="${u.address}">
+            Check
+        </button>
     </div>
     <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="user-stat">
