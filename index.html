@@ -61,7 +61,7 @@
     <div class="max-w-7xl mx-auto p-6">
       <!-- Header Section -->
       <div class="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
-        <div class="border-l-4 border-blue-500 p-6">
+        <div class="border-l-4 border-blue-500 p-3 mb-2">
           <div class="flex justify-between items-center">
             <h1 class="text-sm font-semibold text-gray-800">
               Batch Query Transaction Info (UTC)
@@ -88,7 +88,7 @@
         </div>
 
         <!-- Wallet Address Inputs -->
-        <div class="px-6 pb-4">
+        <div class="px-3 pb-4">
           <div class="flex items-center justify-between mb-3">
             <h3 class="text-sm font-medium text-gray-700">Wallet Addresses</h3>
             <button
@@ -102,7 +102,7 @@
           <div id="walletInputsContainer" class="space-y-2">
             <div class="wallet-input-group flex items-center space-x-2">
               <button
-                class="query-btn px-1 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium"
+                class="query-btn px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium"
               >
                 Query
               </button>
@@ -128,7 +128,7 @@
         </div>
 
         <!-- Action Buttons -->
-        <div class="px-6 pb-6">
+        <div class="px-3 pb-3">
           <div class="flex space-x-4">
             <button
               id="executeQuery"
@@ -145,10 +145,18 @@
       <div id="main-content">
         <!-- Total Stats Section -->
         <div
-          class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6"
+          class="bg-white rounded-lg shadow-sm border border-gray-200 p-3 mb-2"
         >
-          <h2 class="text-lg font-semibold text-gray-800 mb-4">Total Stats</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div id="collapse-btn" class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-gray-800">Total Stats</h2>
+            <button class="p-1 hover:bg-gray-100 rounded transition-colors">
+              <i data-lucide="chevron-up" class="w-5 h-5 text-gray-500"></i>
+            </button>
+          </div>
+          <div
+            id="collapsible-content"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4"
+          >
             <div class="stat-card">
               <div class="text-sm text-gray-500 mb-1">Total Trade Count</div>
               <div class="text-2xl font-bold text-gray-900">0</div>
@@ -197,7 +205,7 @@
         newInputGroup.className =
           "wallet-input-group flex items-center space-x-2";
         newInputGroup.innerHTML = `
-                <button class="query-btn px-1 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium">
+                <button class="query-btn px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium">
                     Query
                 </button>
                 <input type="text" placeholder="Name" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm" style="width: 60px;">
@@ -242,6 +250,12 @@
           } else {
             alert("Please enter wallet address!");
           }
+        }
+        if (e.target.classList.contains("wallet-check-btn")) {
+          const name = e.target.getAttribute("data-name");
+          const address = e.target.getAttribute("data-address");
+          // executeSingleQuery(name, address);
+          executeBatchQuery();
         }
       });
 
@@ -298,7 +312,7 @@
         newInputGroup.className =
           "wallet-input-group flex items-center space-x-2";
         newInputGroup.innerHTML = `
-                <button class="query-btn px-1 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium">
+                <button class="query-btn px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-xs font-medium">
                     Query
                 </button>
                 <input type="text" placeholder="Name" value="${name}" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm" style="width: 60px;">
@@ -475,15 +489,17 @@
       function renderWalletHTML(u) {
         return `
 <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-6">
-    <div class="flex items-center space-x-3 mb-6">
-        <div class="text-blue-500 font-semibold text-lg">${
-          u.name || "Wallet"
-        }</div>
-        <div class="text-gray-400">|</div>
-        <div class="text-gray-500 font-mono text-sm">${u.address.slice(
-          0,
-          7
-        )}...${u.address.slice(-4)}</div>
+    <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center space-x-3">
+            <div class="text-blue-500 font-semibold text-lg">${
+              u.name || "Wallet"
+            }</div>
+            <div class="text-gray-400">|</div>
+            <div class="text-gray-500 font-mono text-sm">${u.address.slice(
+              0,
+              7
+            )}...${u.address.slice(-4)}</div>
+        </div>
     </div>
     <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="user-stat">
@@ -646,6 +662,23 @@
         .addEventListener("click", function (e) {
           e.preventDefault();
           executeBatchQuery();
+        });
+
+      // Collapse functionality
+      document
+        .getElementById("collapse-btn")
+        .addEventListener("click", function () {
+          const content = document.getElementById("collapsible-content");
+          const icon = this.querySelector("i");
+
+          if (content.style.display === "none") {
+            content.style.display = "grid";
+            icon.setAttribute("data-lucide", "chevron-up");
+          } else {
+            content.style.display = "none";
+            icon.setAttribute("data-lucide", "chevron-down");
+          }
+          lucide.createIcons();
         });
 
       // --- KẾT THÚC CODE MỚI ---
